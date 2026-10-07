@@ -20,7 +20,7 @@ while IFS=":" read -r pasta url || [ -n "$pasta" ]; do
 
     rm -rf *
 
-    wget -E -k -p -nH --cut-dirs=10 --base="http://$url" "http://$url"
+    wget -E -k -K -p -H -nH --cut-dirs=10 --base="http://$url" "http://$url"
 
     ARQUIVO_BAIXADO=$(find . -maxdepth 1 -type f -name "*.html" ! -name "index.html" | head -n 1)
     
