@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd /home/marcos/Projetos/gh-pages/
+
 LISTA="paineis.txt"
 
 if [ ! -f "$LISTA" ]; then
