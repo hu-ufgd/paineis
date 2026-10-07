@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="">
+    <link rel="icon" href="assets/img/paineis-favicon.png">
+    <link rel="icon" href="assets/img/paineis-favicon-128.png" sizes="128x128">
+    <link rel="icon" href="assets/img/paineis-favicon-144.png" sizes="144x144">
+    <title>Taxa de Ocupação </title>
+    <link href="http://10.18.0.82/static/css/fontes.css" rel="stylesheet" type="text/css" media="screen,projection,print" />
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: Roboto, Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+    <title>Taxa de Ocupação </title>
+</head>
+
+<body>
+    
+    <div class="container">
+        
+<style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: Roboto, Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            background-color: #f4f6f9;
+            color: #333;
+            padding: 0 24px;
+        }
+
+        header {
+            margin-bottom: 32px;
+            padding-bottom: 16px;
+            margin-bottom: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        img.logo{
+            width: 142px;
+            height: auto;
+        }
+        
+        .header-unidade{
+            display: flex;
+            /* border-bottom: 2px solid #e2e8f0; */
+            flex-direction: row;
+            justify-content: space-between;
+            font-size: 24px;
+        }
+        header h1 {
+            font-size: 27px;
+            color: #1e293b;
+            margin-bottom: 4px;
+        }
+        header p {
+            color: #64748b;
+            font-size: 14px;
+        }
+
+        /* ESTRUTURA DAS DUAS COLUNAS PRINCIPAIS */
+        .dashboard-container {
+            display: grid;
+            grid-template-columns: 1fr; /* Em telas pequenas fica uma embaixo da outra */
+            gap: 32px;
+            align-items: stretch;
+        }
+
+        .coluna-unidade {
+            background: rgba(255, 255, 255, 0.4);
+            padding: 16px;
+            border-radius: 16px;
+            border: 1px dashed #cbd5e1;
+        }
+
+        .coluna-unidade h2 {
+            font-size: 18px;
+            color: #1e293b;
+            margin-bottom: 20px;
+            padding-bottom: 8px;
+            border-bottom: 3px solid #cbd5e1;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* A GRID DE INDICADORES INTERNA */
+        .grid-indicadores {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        /* Estilização dos Cards */
+        .card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border-top: 4px solid #cbd5e1;
+        }
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+            gap: 8px;
+        }
+        .setor-nome {
+            font-size: 14px;
+            font-weight: 600;
+            color: #475569;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 100%;
+        }
+        .leitos-status {
+            font-size: 12px;
+            color: #94a3b8;
+            font-weight: 500;
+            white-space: nowrap;
+        }
+        .card-body {
+            display: flex;
+            align-items: baseline;
+            margin-bottom: 16px;
+            justify-content: space-between;
+        }
+        .porcentagem {
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 1;
+            margin-right: 8px;
+        }
+
+        /* Barra de Progresso */
+        .barra-progresso-bg {
+            background-color: #e2e8f0;
+            border-radius: 9999px;
+            height: 8px;
+            width: 100%;
+            overflow: hidden;
+        }
+        .barra-progresso-fill {
+            height: 100%;
+            border-radius: 9999px;
+            transition: width 0.5s ease-in-out;
+        }
+
+        div.informacoes {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            justify-content: space-between;
+            align-items: flex-end;
+            color: #64748b;
+            font-size: 12px;
+            position: fixed;
+            right: 12px;
+            bottom: 12px;
+        }
+
+        div.valores-indicadores strong{
+            font-size: 36px;
+            line-height: 36px;
+        }
+
+        div.valores-indicadores span{
+            font-size: 16px;
+            line-height: 24px;
+            margin-right: 16px;
+            color: #93acd1;            
+        }
+
+
+        /* Classes de Alerta */
+        .unidade-critica {
+            color: #ef4444;
+        }
+        .status-critico { border-top-color: #ef4444; }
+        .status-critico .porcentagem { color: #b91c1c; }
+        .status-critico .barra-progresso-fill { background-color: #ef4444; }
+
+        .unidade-alerta {
+            color: #f59e0b;
+        }
+        .status-alerta { border-top-color: #f59e0b; }
+        .status-alerta .porcentagem { color: #b45309; }
+        .status-alerta .barra-progresso-fill { background-color: #f59e0b; }
+
+        .unidade-estavel {
+            color: #10b981;
+        }
+        .status-estavel { border-top-color: #10b981; }
+        .status-estavel .porcentagem { color: #047857; }
+        .status-estavel .barra-progresso-fill { background-color: #10b981; }
+
+
+        /* REGRAS PARA TELAS MENORES QUE 1130PX (TABLETS / CELULARES) */
+        @media (max-width: 1135px ){
+            body{
+                padding: 0px 8px;
+            }
+
+            p{
+                margin-block-start: 4px;
+                margin-block-end: 4px;
+            }
+
+            h1{
+                margin-block-start: 4px;
+                margin-block-end: 4px;
+            }
+
+            h2{
+                margin-block-start: 0;
+                margin-block-end: 0;
+            }
+            .dashboard-container {
+                grid-template-columns: 1fr 1fr; /* Divide a tela exatamente em 2 colunas */
+                gap: 12px;
+            }
+            .grid-indicadores {
+                grid-template-columns: 1fr 1fr 1fr; /* 2 colunas de cards dentro de cada unidade */
+                gap: 8px;
+            }
+            .card {
+                padding: 8px;
+                width: 150px; /* Largura flui conforme a grid pai */
+                border-radius: 4px;
+            }
+            .card-body {
+                margin-bottom: 4px;
+            }
+            .barra-progresso-bg {
+                height: 4px;
+            }
+            .setor-nome {
+                font-size: 11px;
+            }
+            .porcentagem {
+                font-size: 24px;
+            }
+
+            .coluna-unidade h2{
+                margin-bottom: 12px;
+                border-bottom-width: 1px;
+            }
+
+            div.valores-indicadores strong{
+                font-size: 24px;
+                line-height: 24px;
+            }
+
+            div.valores-indicadores span{
+                font-size: 16px;
+                line-height: 24px;
+            }
+
+            div.valores-indicadores span{
+                margin-right: 8px;
+                color: #93acd1;
+            }
+        }
+
+        /* REGRAS PARA TELAS ACIMA DE 3000PX (TVs / PAINÉIS DE PAREDE) */
+        @media( min-width: 3000px){
+            header h1 {
+                font-size: 72px;
+                margin-bottom: 12px;
+            }
+            header p {
+                font-size: 48px;
+            }
+            .dashboard-container {
+                gap: 64px;
+            }
+            .coluna-unidade h2 {
+                font-size: 48px;
+                margin-bottom: 32px;
+                border-bottom-width: 6px;
+            }
+            .grid-indicadores {
+                gap: 32px;
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .leitos-status {
+                font-size: 36px;
+            }
+            .card {
+                padding: 32px;
+                width: 90%;
+            }
+            .barra-progresso-bg {
+                height: 16px;
+            }
+            .setor-nome {
+                font-size: 32px;
+                max-width: 70%;
+            }
+            .porcentagem {
+                font-size: 64pt;
+                padding: 12px 0;
+            }
+        }
+
+        #refresh-progress {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 4px;
+            background: rgba(0,0,0,.15);
+            z-index: 999999;
+        }
+        #refresh-progress-bar {
+            height: 100%;
+            width: 0%;
+            background: #2196F3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Ocupação Instantânea Hospitalar</h1>
+            <p>Status em tempo real dos pacientes presentes e de leitos ativos</p>    
+        </div>
+        <img class="logo" src="assets/img/logo-hubrasil.svg" alt="HUBrasil" />
+    </header>
+
+    <!-- Container do Dashboard dividido em duas áreas -->
+    <main class="dashboard-container">
+
+        <section class="coluna-unidade">
+            <div class="header-unidade">
+                <h2>Unidades de Internação</h2>
+                <div class="valores-indicadores">
+                    <span class="quantidade-pac-leito">148/178</span>
+                    <strong class="unidade-alerta">83.15%</strong>
+                </div>
+            </div>
+            <div class="grid-indicadores">
+                                <div class="card status-critico">
+                    <div class="card-header">
+                        <span class="setor-nome">AC - ALOJAMENTO CONJUNTO</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="porcentagem">104.17%</span>
+                        <span class="leitos-status">25 / 24</span>
+                    </div>
+                    <div class="barra-progresso-bg">
+                        <div class="barra-progresso-fill" data-width="104.17%" width="104.17%"></div>
+                    </div>
+                </div>
+                                <div class="card status-critico">
+                    <div class="card-header">
+                        <span class="setor-nome">UCI - UNIDADE DE CUIDADOS INTERMEDIÁRIOS NEONATAL</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="porcentagem">100%</span>
+                        <span class="leitos-status">15 / 15</span>
+                    </div>
+                    <div class="barra-progresso-bg">
+                        <div class="barra-progresso-fill" data-width="100%" width="100%"></div>
+                    </div>
+                </div>
+                                <div class="card status-critico">
+                    <div class="card-header">
+                        <span class="setor-nome">UTI ADULTO - B</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="porcentagem">100%</span>
+                        <span class="leitos-status">8 / 8</span>
+                    </div>
+                    <div class="barra-progresso-bg">
+                        <div class="barra-progresso-fill" data-width="100%" width="100%"></div>
+                    </div>
+                </div>
+                                <div class="card status-critico">
+                    <div class="card-header">
+                        <span class="setor-nome">UTI NEONATAL</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="porcentagem">100%</span>
+                        <span class="leitos-status">10 / 10</span>
+                    </div>
+                    <div class="barra-progresso-bg">
+                        <div class="barra-progresso-fill" data-width="100%" width="100%"></div>
+                    </div>
+                </div>
+                                <div class="card status-alerta">
+                    <div class="card-header">
+                        <span class="setor-nome">CLÍNICA MÉDICA</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="porcentagem">94.12%</span>
+                        <span class="leitos-status">32 / 34</span>
+                    </div>
+                    <div class="barra-progresso-bg">
+                        <div class="barra-progresso-fill" data-width="94.12%" width="94.12%"></div>
+                    </div>
+                </div>
+                                <div class="card status-alerta">
+                    <div class="card-header">
+                        <span class="setor-nome">CLÍNICA MÉDICA PSIQUIÁTRICA</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="porcentagem">88.89%</span>
+                        <span class="leitos-status">8 / 9</span>
+                    </div>
+                    <div class="barra-progresso-bg">
+                        <div class="barra-progresso-fill" data-width="88.89%" width="88.89%"></div>
+                    </div>
+                </div>
+                                <div class="card status-estavel">
+                    <div class="card-header">
+                        <span class="setor-nome">UTI PEDIÁTRICA</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="porcentagem">80%</span>
+                        <span class="leitos-status">8 / 10</span>
+                    </div>
+                    <div class="barra-progresso-bg">
+                        <div class="barra-progresso-fill" data-width="80%" width="80%"></div>
+                    </div>
+                </div>
+                                <div class="card status-estavel">
+                    <div class="card-header">
+                        <span class="setor-nome">CLÍNICA CIRÚRGICA</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="porcentagem">76.19%</span>
+                        <span class="leitos-status">16 / 21</span>
+                    </div>
+                    <div class="barra-progresso-bg">
+                        <div class="barra-progresso-fill" data-width="76.19%" width="76.19%"></div>
+                    </div>
+                </div>
+                                <div class="card status-estavel">
+                    <div class="card-header">
+                        <span class="setor-nome">CLÍNICA OBSTÉTRICA</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="porcentagem">75%</span>
+                        <span class="leitos-status">9 / 12</span>
+                    </div>
+                    <div class="barra-progresso-bg">
+                        <div class="barra-progresso-fill" data-width="75%" width="75%"></div>
+                    </div>
+                </div>
+                                <div class="card status-estavel">
+                    <div class="card-header">
+                        <span class="setor-nome">UTI ADULTO - A</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="porcentagem">66.67%</span>
+                        <span class="leitos-status">4 / 6</span>
+                    </div>
+                    <div class="barra-progresso-bg">
+                        <div class="barra-progresso-fill" data-width="66.67%" width="66.67%"></div>
+                    </div>
+                </div>
+                                <div class="card status-estavel">
+                    <div class="card-header">
+                        <span class="setor-nome">CLÍNICA PEDIÁTRICA</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="porcentagem">44.83%</span>
+                        <span class="leitos-status">13 / 29</span>
+                    </div>
+                    <div class="barra-progresso-bg">
+                        <div class="barra-progresso-fill" data-width="44.83%" width="44.83%"></div>
+                    </div>
+                </div>
+                        </section>
+
+        <section class="coluna-unidade">
+            <div class="header-unidade">
+                <h2 class="titulo-unidade">Unidades de Observação</h2>
+                <div class="valores-indicadores">
+                    <span class="quantidade-pac-leito">43/64</span>
+                    <strong class="unidade-estavel">67.19%</strong>
+                </div>
+            </div>            
+            <div class="grid-indicadores">
+                                <div class="card status-critico">
+                    <div class="card-header">
+                        <span class="setor-nome">PAGO</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="porcentagem">150%</span>
+                        <span class="leitos-status">15 / 10</span>
+                    </div>
+                    <div class="barra-progresso-bg">
+                        <div class="barra-progresso-fill" data-width="150%" width="150%"></div>
+                    </div>
+                </div>
+                                <div class="card status-critico">
+                    <div class="card-header">
+                        <span class="setor-nome">POSTO DE SUPORTE AMBULATORIAL</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="porcentagem">150%</span>
+                        <span class="leitos-status">9 / 6</span>
+                    </div>
+                    <div class="barra-progresso-bg">
+                        <div class="barra-progresso-fill" data-width="150%" width="150%"></div>
+                    </div>
+                </div>
+                                <div class="card status-estavel">
+                    <div class="card-header">
+                        <span class="setor-nome">CPN - CENTRO DE PARTO NORMAL</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="porcentagem">66.67%</span>
+                        <span class="leitos-status">4 / 6</span>
+                    </div>
+                    <div class="barra-progresso-bg">
+                        <div class="barra-progresso-fill" data-width="66.67%" width="66.67%"></div>
+                    </div>
+                </div>
+                                <div class="card status-estavel">
+                    <div class="card-header">
+                        <span class="setor-nome">CGBP - CASA DA GESTANTE BEBÊ E PUÉRPERA</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="porcentagem">45.16%</span>
+                        <span class="leitos-status">14 / 31</span>
+                    </div>
+                    <div class="barra-progresso-bg">
+                        <div class="barra-progresso-fill" data-width="45.16%" width="45.16%"></div>
+                    </div>
+                </div>
+                                <div class="card status-estavel">
+                    <div class="card-header">
+                        <span class="setor-nome">PRONTO ATENDIMENTO PEDIÁTRICO REFERENCIADO</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="porcentagem">14.29%</span>
+                        <span class="leitos-status">1 / 7</span>
+                    </div>
+                    <div class="barra-progresso-bg">
+                        <div class="barra-progresso-fill" data-width="14.29%" width="14.29%"></div>
+                    </div>
+                </div>
+                                <div class="card status-estavel">
+                    <div class="card-header">
+                        <span class="setor-nome">CENTRO OBSTÉTRICO - SALA DE ADMISSÃO</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="porcentagem">0%</span>
+                        <span class="leitos-status">0 / 4</span>
+                    </div>
+                    <div class="barra-progresso-bg">
+                        <div class="barra-progresso-fill" data-width="0%" width="0%"></div>
+                    </div>
+                </div>
+                        </section>
+
+    </main>
+    <div class="informacoes">
+        <strong>Desenvolvido com 🧠 na USID/SETISD/SUP do HU-UFGD</strong>
+        <small>Atualizado em: 07/10/2026 15:40:54</small>
+    </div>
+
+    <div id="refresh-progress">
+        <div id="refresh-progress-bar"></div>
+    </div>
+
+    <script>
+    (function () {
+        const DURACAO = 60000; // 60 segundos
+        const barra = document.getElementById('refresh-progress-bar');
+        const inicio = performance.now();
+
+        function atualizar(agora) {
+            const progresso = Math.min((agora - inicio) / DURACAO, 1);
+            barra.style.width = (progresso * 100) + '%';
+
+            if (progresso < 1) {
+                requestAnimationFrame(atualizar);
+            }
+        }
+
+        requestAnimationFrame(atualizar);
+
+        document.querySelectorAll('.barra-progresso-fill').forEach(el => {
+            el.style.width = '0';
+
+            requestAnimationFrame(() => {
+                el.style.transition = 'width .8s ease';
+                el.style.width = el.dataset.width;
+            });
+        });
+        
+        setTimeout(function () {
+            location.reload();
+        }, DURACAO);
+    })();
+    </script>
+    <script src="http://10.18.0.82/static/js/jquery.min.js"></script>
+
+    </div>
+    
+    <script src="http://10.18.0.82/static/js/jquery.min.js"></script>
+    <script>
+        
+    </script>
+</body>
+
+</html>
