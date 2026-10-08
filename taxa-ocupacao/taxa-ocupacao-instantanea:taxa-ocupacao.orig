@@ -537,18 +537,6 @@
                 </div>
                                 <div class="card status-estavel">
                     <div class="card-header">
-                        <span class="setor-nome">PAGO</span>
-                    </div>
-                    <div class="card-body">
-                        <span class="porcentagem">30%</span>
-                        <span class="leitos-status">3 / 10</span>
-                    </div>
-                    <div class="barra-progresso-bg">
-                        <div class="barra-progresso-fill" data-width="30%" width="30%"></div>
-                    </div>
-                </div>
-                                <div class="card status-estavel">
-                    <div class="card-header">
                         <span class="setor-nome">PRONTO ATENDIMENTO PEDIÁTRICO REFERENCIADO</span>
                     </div>
                     <div class="card-body">
@@ -564,11 +552,23 @@
                         <span class="setor-nome">CENTRO OBSTÉTRICO - SALA DE ADMISSÃO</span>
                     </div>
                     <div class="card-body">
-                        <span class="porcentagem">0%</span>
-                        <span class="leitos-status">0 / 4</span>
+                        <span class="porcentagem">25%</span>
+                        <span class="leitos-status">1 / 4</span>
                     </div>
                     <div class="barra-progresso-bg">
-                        <div class="barra-progresso-fill" data-width="0%" width="0%"></div>
+                        <div class="barra-progresso-fill" data-width="25%" width="25%"></div>
+                    </div>
+                </div>
+                                <div class="card status-estavel">
+                    <div class="card-header">
+                        <span class="setor-nome">PAGO</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="porcentagem">20%</span>
+                        <span class="leitos-status">2 / 10</span>
+                    </div>
+                    <div class="barra-progresso-bg">
+                        <div class="barra-progresso-fill" data-width="20%" width="20%"></div>
                     </div>
                 </div>
                         </section>
@@ -576,7 +576,7 @@
     </main>
     <div class="informacoes">
         <strong>Desenvolvido com 🧠 na USID/SETISD/SUP do HU-UFGD</strong>
-        <small>Atualizado em: 08/10/2026 06:45:00</small>
+        <small>Atualizado em: 08/10/2026 07:00:00</small>
     </div>
 
     <div id="refresh-progress">
