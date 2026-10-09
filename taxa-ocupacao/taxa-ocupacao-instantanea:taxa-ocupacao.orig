@@ -351,8 +351,8 @@
             <div class="header-unidade">
                 <h2>Unidades de Internação</h2>
                 <div class="valores-indicadores">
-                    <span class="quantidade-pac-leito">141/178</span>
-                    <strong class="unidade-estavel">79.21%</strong>
+                    <span class="quantidade-pac-leito">140/178</span>
+                    <strong class="unidade-estavel">78.65%</strong>
                 </div>
             </div>
             <div class="grid-indicadores">
@@ -457,11 +457,11 @@
                         <span class="setor-nome">CLÍNICA PEDIÁTRICA</span>
                     </div>
                     <div class="card-body">
-                        <span class="porcentagem">55.17%</span>
-                        <span class="leitos-status">16 / 29</span>
+                        <span class="porcentagem">51.72%</span>
+                        <span class="leitos-status">15 / 29</span>
                     </div>
                     <div class="barra-progresso-bg">
-                        <div class="barra-progresso-fill" data-width="55.17%" width="55.17%"></div>
+                        <div class="barra-progresso-fill" data-width="51.72%" width="51.72%"></div>
                     </div>
                 </div>
                                 <div class="card status-estavel">
@@ -513,18 +513,6 @@
                 </div>
                                 <div class="card status-estavel">
                     <div class="card-header">
-                        <span class="setor-nome">PAGO</span>
-                    </div>
-                    <div class="card-body">
-                        <span class="porcentagem">70%</span>
-                        <span class="leitos-status">7 / 10</span>
-                    </div>
-                    <div class="barra-progresso-bg">
-                        <div class="barra-progresso-fill" data-width="70%" width="70%"></div>
-                    </div>
-                </div>
-                                <div class="card status-estavel">
-                    <div class="card-header">
                         <span class="setor-nome">POSTO DE SUPORTE AMBULATORIAL</span>
                     </div>
                     <div class="card-body">
@@ -533,6 +521,18 @@
                     </div>
                     <div class="barra-progresso-bg">
                         <div class="barra-progresso-fill" data-width="66.67%" width="66.67%"></div>
+                    </div>
+                </div>
+                                <div class="card status-estavel">
+                    <div class="card-header">
+                        <span class="setor-nome">PAGO</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="porcentagem">60%</span>
+                        <span class="leitos-status">6 / 10</span>
+                    </div>
+                    <div class="barra-progresso-bg">
+                        <div class="barra-progresso-fill" data-width="60%" width="60%"></div>
                     </div>
                 </div>
                                 <div class="card status-estavel">
@@ -564,11 +564,11 @@
                         <span class="setor-nome">CGBP - CASA DA GESTANTE BEBÊ E PUÉRPERA</span>
                     </div>
                     <div class="card-body">
-                        <span class="porcentagem">38.71%</span>
-                        <span class="leitos-status">12 / 31</span>
+                        <span class="porcentagem">41.94%</span>
+                        <span class="leitos-status">13 / 31</span>
                     </div>
                     <div class="barra-progresso-bg">
-                        <div class="barra-progresso-fill" data-width="38.71%" width="38.71%"></div>
+                        <div class="barra-progresso-fill" data-width="41.94%" width="41.94%"></div>
                     </div>
                 </div>
                         </section>
@@ -576,7 +576,7 @@
     </main>
     <div class="informacoes">
         <strong>Desenvolvido com 🧠 na USID/SETISD/SUP do HU-UFGD</strong>
-        <small>Atualizado em: 09/10/2026 14:00:00</small>
+        <small>Atualizado em: 09/10/2026 14:15:01</small>
     </div>
 
     <div id="refresh-progress">
