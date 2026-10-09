@@ -504,11 +504,11 @@
                         <span class="setor-nome">PAGO</span>
                     </div>
                     <div class="card-body">
-                        <span class="porcentagem">200%</span>
-                        <span class="leitos-status">20 / 10</span>
+                        <span class="porcentagem">190%</span>
+                        <span class="leitos-status">19 / 10</span>
                     </div>
                     <div class="barra-progresso-bg">
-                        <div class="barra-progresso-fill" data-width="200%" width="200%"></div>
+                        <div class="barra-progresso-fill" data-width="190%" width="190%"></div>
                     </div>
                 </div>
                                 <div class="card status-estavel">
@@ -537,6 +537,18 @@
                 </div>
                                 <div class="card status-estavel">
                     <div class="card-header">
+                        <span class="setor-nome">PRONTO ATENDIMENTO PEDIÁTRICO REFERENCIADO</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="porcentagem">28.57%</span>
+                        <span class="leitos-status">2 / 7</span>
+                    </div>
+                    <div class="barra-progresso-bg">
+                        <div class="barra-progresso-fill" data-width="28.57%" width="28.57%"></div>
+                    </div>
+                </div>
+                                <div class="card status-estavel">
+                    <div class="card-header">
                         <span class="setor-nome">CPN - CENTRO DE PARTO NORMAL</span>
                     </div>
                     <div class="card-body">
@@ -545,18 +557,6 @@
                     </div>
                     <div class="barra-progresso-bg">
                         <div class="barra-progresso-fill" data-width="16.67%" width="16.67%"></div>
-                    </div>
-                </div>
-                                <div class="card status-estavel">
-                    <div class="card-header">
-                        <span class="setor-nome">PRONTO ATENDIMENTO PEDIÁTRICO REFERENCIADO</span>
-                    </div>
-                    <div class="card-body">
-                        <span class="porcentagem">14.29%</span>
-                        <span class="leitos-status">1 / 7</span>
-                    </div>
-                    <div class="barra-progresso-bg">
-                        <div class="barra-progresso-fill" data-width="14.29%" width="14.29%"></div>
                     </div>
                 </div>
                                 <div class="card status-estavel">
@@ -576,7 +576,7 @@
     </main>
     <div class="informacoes">
         <strong>Desenvolvido com 🧠 na USID/SETISD/SUP do HU-UFGD</strong>
-        <small>Atualizado em: 09/10/2026 02:00:00</small>
+        <small>Atualizado em: 09/10/2026 02:15:01</small>
     </div>
 
     <div id="refresh-progress">
