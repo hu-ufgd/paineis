@@ -433,11 +433,11 @@
                         <span class="setor-nome">CLÍNICA MÉDICA</span>
                     </div>
                     <div class="card-body">
-                        <span class="porcentagem">94.12%</span>
-                        <span class="leitos-status">32 / 34</span>
+                        <span class="porcentagem">97.06%</span>
+                        <span class="leitos-status">33 / 34</span>
                     </div>
                     <div class="barra-progresso-bg">
-                        <div class="barra-progresso-fill" data-width="94.12%" width="94.12%"></div>
+                        <div class="barra-progresso-fill" data-width="97.06%" width="97.06%"></div>
                     </div>
                 </div>
                                 <div class="card status-alerta">
@@ -466,18 +466,6 @@
                 </div>
                                 <div class="card status-estavel">
                     <div class="card-header">
-                        <span class="setor-nome">CLÍNICA CIRÚRGICA</span>
-                    </div>
-                    <div class="card-body">
-                        <span class="porcentagem">42.86%</span>
-                        <span class="leitos-status">9 / 21</span>
-                    </div>
-                    <div class="barra-progresso-bg">
-                        <div class="barra-progresso-fill" data-width="42.86%" width="42.86%"></div>
-                    </div>
-                </div>
-                                <div class="card status-estavel">
-                    <div class="card-header">
                         <span class="setor-nome">AC - ALOJAMENTO CONJUNTO</span>
                     </div>
                     <div class="card-body">
@@ -486,6 +474,18 @@
                     </div>
                     <div class="barra-progresso-bg">
                         <div class="barra-progresso-fill" data-width="41.67%" width="41.67%"></div>
+                    </div>
+                </div>
+                                <div class="card status-estavel">
+                    <div class="card-header">
+                        <span class="setor-nome">CLÍNICA CIRÚRGICA</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="porcentagem">38.10%</span>
+                        <span class="leitos-status">8 / 21</span>
+                    </div>
+                    <div class="barra-progresso-bg">
+                        <div class="barra-progresso-fill" data-width="38.10%" width="38.10%"></div>
                     </div>
                 </div>
                         </section>
@@ -576,7 +576,7 @@
     </main>
     <div class="informacoes">
         <strong>Desenvolvido com 🧠 na USID/SETISD/SUP do HU-UFGD</strong>
-        <small>Atualizado em: 09/10/2026 15:00:00</small>
+        <small>Atualizado em: 09/10/2026 15:15:00</small>
     </div>
 
     <div id="refresh-progress">
