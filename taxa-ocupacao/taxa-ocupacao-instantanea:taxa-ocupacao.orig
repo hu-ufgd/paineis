@@ -501,18 +501,6 @@
             <div class="grid-indicadores">
                                 <div class="card status-estavel">
                     <div class="card-header">
-                        <span class="setor-nome">PAGO</span>
-                    </div>
-                    <div class="card-body">
-                        <span class="porcentagem">80%</span>
-                        <span class="leitos-status">8 / 10</span>
-                    </div>
-                    <div class="barra-progresso-bg">
-                        <div class="barra-progresso-fill" data-width="80%" width="80%"></div>
-                    </div>
-                </div>
-                                <div class="card status-estavel">
-                    <div class="card-header">
                         <span class="setor-nome">CENTRO OBSTÉTRICO - SALA DE ADMISSÃO</span>
                     </div>
                     <div class="card-body">
@@ -525,6 +513,18 @@
                 </div>
                                 <div class="card status-estavel">
                     <div class="card-header">
+                        <span class="setor-nome">PAGO</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="porcentagem">60%</span>
+                        <span class="leitos-status">6 / 10</span>
+                    </div>
+                    <div class="barra-progresso-bg">
+                        <div class="barra-progresso-fill" data-width="60%" width="60%"></div>
+                    </div>
+                </div>
+                                <div class="card status-estavel">
+                    <div class="card-header">
                         <span class="setor-nome">CGBP - CASA DA GESTANTE BEBÊ E PUÉRPERA</span>
                     </div>
                     <div class="card-body">
@@ -533,6 +533,18 @@
                     </div>
                     <div class="barra-progresso-bg">
                         <div class="barra-progresso-fill" data-width="38.71%" width="38.71%"></div>
+                    </div>
+                </div>
+                                <div class="card status-estavel">
+                    <div class="card-header">
+                        <span class="setor-nome">POSTO DE SUPORTE AMBULATORIAL</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="porcentagem">33.33%</span>
+                        <span class="leitos-status">2 / 6</span>
+                    </div>
+                    <div class="barra-progresso-bg">
+                        <div class="barra-progresso-fill" data-width="33.33%" width="33.33%"></div>
                     </div>
                 </div>
                                 <div class="card status-estavel">
@@ -559,24 +571,12 @@
                         <div class="barra-progresso-fill" data-width="16.67%" width="16.67%"></div>
                     </div>
                 </div>
-                                <div class="card status-estavel">
-                    <div class="card-header">
-                        <span class="setor-nome">POSTO DE SUPORTE AMBULATORIAL</span>
-                    </div>
-                    <div class="card-body">
-                        <span class="porcentagem">0%</span>
-                        <span class="leitos-status">0 / 6</span>
-                    </div>
-                    <div class="barra-progresso-bg">
-                        <div class="barra-progresso-fill" data-width="0%" width="0%"></div>
-                    </div>
-                </div>
                         </section>
 
     </main>
     <div class="informacoes">
         <strong>Desenvolvido com 🧠 na USID/SETISD/SUP do HU-UFGD</strong>
-        <small>Atualizado em: 09/10/2026 06:15:01</small>
+        <small>Atualizado em: 09/10/2026 06:30:01</small>
     </div>
 
     <div id="refresh-progress">
