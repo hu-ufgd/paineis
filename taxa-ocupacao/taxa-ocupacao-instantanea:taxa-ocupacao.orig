@@ -351,8 +351,8 @@
             <div class="header-unidade">
                 <h2>Unidades de Internação</h2>
                 <div class="valores-indicadores">
-                    <span class="quantidade-pac-leito">136/178</span>
-                    <strong class="unidade-estavel">76.40%</strong>
+                    <span class="quantidade-pac-leito">137/178</span>
+                    <strong class="unidade-estavel">76.97%</strong>
                 </div>
             </div>
             <div class="grid-indicadores">
@@ -457,11 +457,11 @@
                         <span class="setor-nome">AC - ALOJAMENTO CONJUNTO</span>
                     </div>
                     <div class="card-body">
-                        <span class="porcentagem">54.17%</span>
-                        <span class="leitos-status">13 / 24</span>
+                        <span class="porcentagem">58.33%</span>
+                        <span class="leitos-status">14 / 24</span>
                     </div>
                     <div class="barra-progresso-bg">
-                        <div class="barra-progresso-fill" data-width="54.17%" width="54.17%"></div>
+                        <div class="barra-progresso-fill" data-width="58.33%" width="58.33%"></div>
                     </div>
                 </div>
                                 <div class="card status-estavel">
@@ -494,8 +494,8 @@
             <div class="header-unidade">
                 <h2 class="titulo-unidade">Unidades de Observação</h2>
                 <div class="valores-indicadores">
-                    <span class="quantidade-pac-leito">40/64</span>
-                    <strong class="unidade-estavel">62.50%</strong>
+                    <span class="quantidade-pac-leito">39/64</span>
+                    <strong class="unidade-estavel">60.94%</strong>
                 </div>
             </div>            
             <div class="grid-indicadores">
@@ -513,23 +513,23 @@
                 </div>
                                 <div class="card status-estavel">
                     <div class="card-header">
-                        <span class="setor-nome">CENTRO OBSTÉTRICO - SALA DE ADMISSÃO</span>
-                    </div>
-                    <div class="card-body">
-                        <span class="porcentagem">75%</span>
-                        <span class="leitos-status">3 / 4</span>
-                    </div>
-                    <div class="barra-progresso-bg">
-                        <div class="barra-progresso-fill" data-width="75%" width="75%"></div>
-                    </div>
-                </div>
-                                <div class="card status-estavel">
-                    <div class="card-header">
                         <span class="setor-nome">CPN - CENTRO DE PARTO NORMAL</span>
                     </div>
                     <div class="card-body">
                         <span class="porcentagem">50%</span>
                         <span class="leitos-status">3 / 6</span>
+                    </div>
+                    <div class="barra-progresso-bg">
+                        <div class="barra-progresso-fill" data-width="50%" width="50%"></div>
+                    </div>
+                </div>
+                                <div class="card status-estavel">
+                    <div class="card-header">
+                        <span class="setor-nome">CENTRO OBSTÉTRICO - SALA DE ADMISSÃO</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="porcentagem">50%</span>
+                        <span class="leitos-status">2 / 4</span>
                     </div>
                     <div class="barra-progresso-bg">
                         <div class="barra-progresso-fill" data-width="50%" width="50%"></div>
@@ -576,7 +576,7 @@
     </main>
     <div class="informacoes">
         <strong>Desenvolvido com 🧠 na USID/SETISD/SUP do HU-UFGD</strong>
-        <small>Atualizado em: 08/10/2026 20:45:00</small>
+        <small>Atualizado em: 08/10/2026 21:00:00</small>
     </div>
 
     <div id="refresh-progress">
