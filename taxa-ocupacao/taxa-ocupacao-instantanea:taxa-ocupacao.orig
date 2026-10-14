@@ -351,8 +351,8 @@
             <div class="header-unidade">
                 <h2>Unidades de Internação</h2>
                 <div class="valores-indicadores">
-                    <span class="quantidade-pac-leito">154/178</span>
-                    <strong class="unidade-alerta">86.52%</strong>
+                    <span class="quantidade-pac-leito">153/178</span>
+                    <strong class="unidade-alerta">85.96%</strong>
                 </div>
             </div>
             <div class="grid-indicadores">
@@ -481,11 +481,11 @@
                         <span class="setor-nome">CLÍNICA CIRÚRGICA</span>
                     </div>
                     <div class="card-body">
-                        <span class="porcentagem">61.90%</span>
-                        <span class="leitos-status">13 / 21</span>
+                        <span class="porcentagem">57.14%</span>
+                        <span class="leitos-status">12 / 21</span>
                     </div>
                     <div class="barra-progresso-bg">
-                        <div class="barra-progresso-fill" data-width="61.90%" width="61.90%"></div>
+                        <div class="barra-progresso-fill" data-width="57.14%" width="57.14%"></div>
                     </div>
                 </div>
                         </section>
@@ -576,7 +576,7 @@
     </main>
     <div class="informacoes">
         <strong>Desenvolvido com 🧠 na USID/SETISD/SUP do HU-UFGD</strong>
-        <small>Atualizado em: 14/10/2026 12:15:00</small>
+        <small>Atualizado em: 14/10/2026 12:30:00</small>
     </div>
 
     <div id="refresh-progress">
