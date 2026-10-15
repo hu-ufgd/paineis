@@ -499,16 +499,28 @@
                 </div>
             </div>            
             <div class="grid-indicadores">
-                                <div class="card status-critico">
+                                <div class="card status-alerta">
                     <div class="card-header">
                         <span class="setor-nome">PAGO</span>
                     </div>
                     <div class="card-body">
-                        <span class="porcentagem">110%</span>
-                        <span class="leitos-status">11 / 10</span>
+                        <span class="porcentagem">90%</span>
+                        <span class="leitos-status">9 / 10</span>
                     </div>
                     <div class="barra-progresso-bg">
-                        <div class="barra-progresso-fill" data-width="110%" width="110%"></div>
+                        <div class="barra-progresso-fill" data-width="90%" width="90%"></div>
+                    </div>
+                </div>
+                                <div class="card status-estavel">
+                    <div class="card-header">
+                        <span class="setor-nome">CENTRO OBSTÉTRICO - SALA DE ADMISSÃO</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="porcentagem">75%</span>
+                        <span class="leitos-status">3 / 4</span>
+                    </div>
+                    <div class="barra-progresso-bg">
+                        <div class="barra-progresso-fill" data-width="75%" width="75%"></div>
                     </div>
                 </div>
                                 <div class="card status-estavel">
@@ -533,18 +545,6 @@
                     </div>
                     <div class="barra-progresso-bg">
                         <div class="barra-progresso-fill" data-width="32.26%" width="32.26%"></div>
-                    </div>
-                </div>
-                                <div class="card status-estavel">
-                    <div class="card-header">
-                        <span class="setor-nome">CENTRO OBSTÉTRICO - SALA DE ADMISSÃO</span>
-                    </div>
-                    <div class="card-body">
-                        <span class="porcentagem">25%</span>
-                        <span class="leitos-status">1 / 4</span>
-                    </div>
-                    <div class="barra-progresso-bg">
-                        <div class="barra-progresso-fill" data-width="25%" width="25%"></div>
                     </div>
                 </div>
                                 <div class="card status-estavel">
@@ -576,7 +576,7 @@
     </main>
     <div class="informacoes">
         <strong>Desenvolvido com 🧠 na USID/SETISD/SUP do HU-UFGD</strong>
-        <small>Atualizado em: 15/10/2026 05:00:00</small>
+        <small>Atualizado em: 15/10/2026 05:15:00</small>
     </div>
 
     <div id="refresh-progress">
