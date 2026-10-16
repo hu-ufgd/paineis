@@ -351,8 +351,8 @@
             <div class="header-unidade">
                 <h2>Unidades de Internação</h2>
                 <div class="valores-indicadores">
-                    <span class="quantidade-pac-leito">138/187</span>
-                    <strong class="unidade-estavel">73.80%</strong>
+                    <span class="quantidade-pac-leito">139/187</span>
+                    <strong class="unidade-estavel">74.33%</strong>
                 </div>
             </div>
             <div class="grid-indicadores">
@@ -442,6 +442,18 @@
                 </div>
                                 <div class="card status-estavel">
                     <div class="card-header">
+                        <span class="setor-nome">CLÍNICA PEDIÁTRICA</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="porcentagem">75.86%</span>
+                        <span class="leitos-status">22 / 29</span>
+                    </div>
+                    <div class="barra-progresso-bg">
+                        <div class="barra-progresso-fill" data-width="75.86%" width="75.86%"></div>
+                    </div>
+                </div>
+                                <div class="card status-estavel">
+                    <div class="card-header">
                         <span class="setor-nome">CLÍNICA OBSTÉTRICA</span>
                     </div>
                     <div class="card-body">
@@ -450,18 +462,6 @@
                     </div>
                     <div class="barra-progresso-bg">
                         <div class="barra-progresso-fill" data-width="75%" width="75%"></div>
-                    </div>
-                </div>
-                                <div class="card status-estavel">
-                    <div class="card-header">
-                        <span class="setor-nome">CLÍNICA PEDIÁTRICA</span>
-                    </div>
-                    <div class="card-body">
-                        <span class="porcentagem">72.41%</span>
-                        <span class="leitos-status">21 / 29</span>
-                    </div>
-                    <div class="barra-progresso-bg">
-                        <div class="barra-progresso-fill" data-width="72.41%" width="72.41%"></div>
                     </div>
                 </div>
                                 <div class="card status-estavel">
@@ -494,8 +494,8 @@
             <div class="header-unidade">
                 <h2 class="titulo-unidade">Unidades de Observação</h2>
                 <div class="valores-indicadores">
-                    <span class="quantidade-pac-leito">36/64</span>
-                    <strong class="unidade-estavel">56.25%</strong>
+                    <span class="quantidade-pac-leito">35/64</span>
+                    <strong class="unidade-estavel">54.69%</strong>
                 </div>
             </div>            
             <div class="grid-indicadores">
@@ -549,18 +549,6 @@
                 </div>
                                 <div class="card status-estavel">
                     <div class="card-header">
-                        <span class="setor-nome">PRONTO ATENDIMENTO PEDIÁTRICO REFERENCIADO</span>
-                    </div>
-                    <div class="card-body">
-                        <span class="porcentagem">42.86%</span>
-                        <span class="leitos-status">3 / 7</span>
-                    </div>
-                    <div class="barra-progresso-bg">
-                        <div class="barra-progresso-fill" data-width="42.86%" width="42.86%"></div>
-                    </div>
-                </div>
-                                <div class="card status-estavel">
-                    <div class="card-header">
                         <span class="setor-nome">CGBP - CASA DA GESTANTE BEBÊ E PUÉRPERA</span>
                     </div>
                     <div class="card-body">
@@ -571,12 +559,24 @@
                         <div class="barra-progresso-fill" data-width="29.03%" width="29.03%"></div>
                     </div>
                 </div>
+                                <div class="card status-estavel">
+                    <div class="card-header">
+                        <span class="setor-nome">PRONTO ATENDIMENTO PEDIÁTRICO REFERENCIADO</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="porcentagem">28.57%</span>
+                        <span class="leitos-status">2 / 7</span>
+                    </div>
+                    <div class="barra-progresso-bg">
+                        <div class="barra-progresso-fill" data-width="28.57%" width="28.57%"></div>
+                    </div>
+                </div>
                         </section>
 
     </main>
     <div class="informacoes">
         <strong>Desenvolvido com 🧠 na USID/SETISD/SUP do HU-UFGD</strong>
-        <small>Atualizado em: 15/10/2026 20:00:01</small>
+        <small>Atualizado em: 15/10/2026 20:15:00</small>
     </div>
 
     <div id="refresh-progress">
