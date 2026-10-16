@@ -351,8 +351,8 @@
             <div class="header-unidade">
                 <h2>Unidades de Internação</h2>
                 <div class="valores-indicadores">
-                    <span class="quantidade-pac-leito">139/187</span>
-                    <strong class="unidade-estavel">74.33%</strong>
+                    <span class="quantidade-pac-leito">140/187</span>
+                    <strong class="unidade-estavel">74.87%</strong>
                 </div>
             </div>
             <div class="grid-indicadores">
@@ -469,11 +469,11 @@
                         <span class="setor-nome">AC - ALOJAMENTO CONJUNTO</span>
                     </div>
                     <div class="card-body">
-                        <span class="porcentagem">50%</span>
-                        <span class="leitos-status">12 / 24</span>
+                        <span class="porcentagem">54.17%</span>
+                        <span class="leitos-status">13 / 24</span>
                     </div>
                     <div class="barra-progresso-bg">
-                        <div class="barra-progresso-fill" data-width="50%" width="50%"></div>
+                        <div class="barra-progresso-fill" data-width="54.17%" width="54.17%"></div>
                     </div>
                 </div>
                                 <div class="card status-estavel">
@@ -501,18 +501,6 @@
             <div class="grid-indicadores">
                                 <div class="card status-critico">
                     <div class="card-header">
-                        <span class="setor-nome">CENTRO OBSTÉTRICO - SALA DE ADMISSÃO</span>
-                    </div>
-                    <div class="card-body">
-                        <span class="porcentagem">125%</span>
-                        <span class="leitos-status">5 / 4</span>
-                    </div>
-                    <div class="barra-progresso-bg">
-                        <div class="barra-progresso-fill" data-width="125%" width="125%"></div>
-                    </div>
-                </div>
-                                <div class="card status-critico">
-                    <div class="card-header">
                         <span class="setor-nome">PAGO</span>
                     </div>
                     <div class="card-body">
@@ -521,6 +509,18 @@
                     </div>
                     <div class="barra-progresso-bg">
                         <div class="barra-progresso-fill" data-width="110%" width="110%"></div>
+                    </div>
+                </div>
+                                <div class="card status-critico">
+                    <div class="card-header">
+                        <span class="setor-nome">CENTRO OBSTÉTRICO - SALA DE ADMISSÃO</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="porcentagem">100%</span>
+                        <span class="leitos-status">4 / 4</span>
+                    </div>
+                    <div class="barra-progresso-bg">
+                        <div class="barra-progresso-fill" data-width="100%" width="100%"></div>
                     </div>
                 </div>
                                 <div class="card status-alerta">
@@ -549,6 +549,18 @@
                 </div>
                                 <div class="card status-estavel">
                     <div class="card-header">
+                        <span class="setor-nome">PRONTO ATENDIMENTO PEDIÁTRICO REFERENCIADO</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="porcentagem">42.86%</span>
+                        <span class="leitos-status">3 / 7</span>
+                    </div>
+                    <div class="barra-progresso-bg">
+                        <div class="barra-progresso-fill" data-width="42.86%" width="42.86%"></div>
+                    </div>
+                </div>
+                                <div class="card status-estavel">
+                    <div class="card-header">
                         <span class="setor-nome">CGBP - CASA DA GESTANTE BEBÊ E PUÉRPERA</span>
                     </div>
                     <div class="card-body">
@@ -559,24 +571,12 @@
                         <div class="barra-progresso-fill" data-width="29.03%" width="29.03%"></div>
                     </div>
                 </div>
-                                <div class="card status-estavel">
-                    <div class="card-header">
-                        <span class="setor-nome">PRONTO ATENDIMENTO PEDIÁTRICO REFERENCIADO</span>
-                    </div>
-                    <div class="card-body">
-                        <span class="porcentagem">28.57%</span>
-                        <span class="leitos-status">2 / 7</span>
-                    </div>
-                    <div class="barra-progresso-bg">
-                        <div class="barra-progresso-fill" data-width="28.57%" width="28.57%"></div>
-                    </div>
-                </div>
                         </section>
 
     </main>
     <div class="informacoes">
         <strong>Desenvolvido com 🧠 na USID/SETISD/SUP do HU-UFGD</strong>
-        <small>Atualizado em: 15/10/2026 20:45:00</small>
+        <small>Atualizado em: 15/10/2026 21:00:00</small>
     </div>
 
     <div id="refresh-progress">
