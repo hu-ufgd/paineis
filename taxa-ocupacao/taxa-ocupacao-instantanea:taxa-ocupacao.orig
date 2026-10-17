@@ -351,8 +351,8 @@
             <div class="header-unidade">
                 <h2>Unidades de Internação</h2>
                 <div class="valores-indicadores">
-                    <span class="quantidade-pac-leito">142/182</span>
-                    <strong class="unidade-estavel">78.02%</strong>
+                    <span class="quantidade-pac-leito">139/182</span>
+                    <strong class="unidade-estavel">76.37%</strong>
                 </div>
             </div>
             <div class="grid-indicadores">
@@ -366,18 +366,6 @@
                     </div>
                     <div class="barra-progresso-bg">
                         <div class="barra-progresso-fill" data-width="110%" width="110%"></div>
-                    </div>
-                </div>
-                                <div class="card status-critico">
-                    <div class="card-header">
-                        <span class="setor-nome">CLÍNICA OBSTÉTRICA</span>
-                    </div>
-                    <div class="card-body">
-                        <span class="porcentagem">108.33%</span>
-                        <span class="leitos-status">13 / 12</span>
-                    </div>
-                    <div class="barra-progresso-bg">
-                        <div class="barra-progresso-fill" data-width="108.33%" width="108.33%"></div>
                     </div>
                 </div>
                                 <div class="card status-critico">
@@ -402,6 +390,18 @@
                     </div>
                     <div class="barra-progresso-bg">
                         <div class="barra-progresso-fill" data-width="97.06%" width="97.06%"></div>
+                    </div>
+                </div>
+                                <div class="card status-alerta">
+                    <div class="card-header">
+                        <span class="setor-nome">CLÍNICA OBSTÉTRICA</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="porcentagem">91.67%</span>
+                        <span class="leitos-status">11 / 12</span>
+                    </div>
+                    <div class="barra-progresso-bg">
+                        <div class="barra-progresso-fill" data-width="91.67%" width="91.67%"></div>
                     </div>
                 </div>
                                 <div class="card status-alerta">
@@ -469,11 +469,11 @@
                         <span class="setor-nome">AC - ALOJAMENTO CONJUNTO</span>
                     </div>
                     <div class="card-body">
-                        <span class="porcentagem">66.67%</span>
-                        <span class="leitos-status">16 / 24</span>
+                        <span class="porcentagem">62.50%</span>
+                        <span class="leitos-status">15 / 24</span>
                     </div>
                     <div class="barra-progresso-bg">
-                        <div class="barra-progresso-fill" data-width="66.67%" width="66.67%"></div>
+                        <div class="barra-progresso-fill" data-width="62.50%" width="62.50%"></div>
                     </div>
                 </div>
                                 <div class="card status-estavel">
@@ -504,11 +504,11 @@
                         <span class="setor-nome">POSTO DE SUPORTE AMBULATORIAL</span>
                     </div>
                     <div class="card-body">
-                        <span class="porcentagem">200%</span>
-                        <span class="leitos-status">12 / 6</span>
+                        <span class="porcentagem">183.33%</span>
+                        <span class="leitos-status">11 / 6</span>
                     </div>
                     <div class="barra-progresso-bg">
-                        <div class="barra-progresso-fill" data-width="200%" width="200%"></div>
+                        <div class="barra-progresso-fill" data-width="183.33%" width="183.33%"></div>
                     </div>
                 </div>
                                 <div class="card status-critico">
@@ -552,11 +552,11 @@
                         <span class="setor-nome">CGBP - CASA DA GESTANTE BEBÊ E PUÉRPERA</span>
                     </div>
                     <div class="card-body">
-                        <span class="porcentagem">38.71%</span>
-                        <span class="leitos-status">12 / 31</span>
+                        <span class="porcentagem">41.94%</span>
+                        <span class="leitos-status">13 / 31</span>
                     </div>
                     <div class="barra-progresso-bg">
-                        <div class="barra-progresso-fill" data-width="38.71%" width="38.71%"></div>
+                        <div class="barra-progresso-fill" data-width="41.94%" width="41.94%"></div>
                     </div>
                 </div>
                                 <div class="card status-estavel">
@@ -576,7 +576,7 @@
     </main>
     <div class="informacoes">
         <strong>Desenvolvido com 🧠 na USID/SETISD/SUP do HU-UFGD</strong>
-        <small>Atualizado em: 17/10/2026 10:30:00</small>
+        <small>Atualizado em: 17/10/2026 10:45:00</small>
     </div>
 
     <div id="refresh-progress">
