@@ -523,16 +523,16 @@
                         <div class="barra-progresso-fill" data-width="210%" width="210%"></div>
                     </div>
                 </div>
-                                <div class="card status-critico">
+                                <div class="card status-estavel">
                     <div class="card-header">
                         <span class="setor-nome">CENTRO OBSTÉTRICO - SALA DE ADMISSÃO</span>
                     </div>
                     <div class="card-body">
-                        <span class="porcentagem">100%</span>
-                        <span class="leitos-status">4 / 4</span>
+                        <span class="porcentagem">75%</span>
+                        <span class="leitos-status">3 / 4</span>
                     </div>
                     <div class="barra-progresso-bg">
-                        <div class="barra-progresso-fill" data-width="100%" width="100%"></div>
+                        <div class="barra-progresso-fill" data-width="75%" width="75%"></div>
                     </div>
                 </div>
                                 <div class="card status-estavel">
@@ -564,11 +564,11 @@
                         <span class="setor-nome">PRONTO ATENDIMENTO PEDIÁTRICO REFERENCIADO</span>
                     </div>
                     <div class="card-body">
-                        <span class="porcentagem">14.29%</span>
-                        <span class="leitos-status">1 / 7</span>
+                        <span class="porcentagem">28.57%</span>
+                        <span class="leitos-status">2 / 7</span>
                     </div>
                     <div class="barra-progresso-bg">
-                        <div class="barra-progresso-fill" data-width="14.29%" width="14.29%"></div>
+                        <div class="barra-progresso-fill" data-width="28.57%" width="28.57%"></div>
                     </div>
                 </div>
                         </section>
@@ -576,7 +576,7 @@
     </main>
     <div class="informacoes">
         <strong>Desenvolvido com 🧠 na USID/SETISD/SUP do HU-UFGD</strong>
-        <small>Atualizado em: 21/10/2026 11:00:00</small>
+        <small>Atualizado em: 21/10/2026 11:15:00</small>
     </div>
 
     <div id="refresh-progress">
