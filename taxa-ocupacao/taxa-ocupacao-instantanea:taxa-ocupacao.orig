@@ -351,8 +351,8 @@
             <div class="header-unidade">
                 <h2>Unidades de Internação</h2>
                 <div class="valores-indicadores">
-                    <span class="quantidade-pac-leito">154/180</span>
-                    <strong class="unidade-alerta">85.56%</strong>
+                    <span class="quantidade-pac-leito">153/180</span>
+                    <strong class="unidade-alerta">85.00%</strong>
                 </div>
             </div>
             <div class="grid-indicadores">
@@ -442,18 +442,6 @@
                 </div>
                                 <div class="card status-estavel">
                     <div class="card-header">
-                        <span class="setor-nome">AC - ALOJAMENTO CONJUNTO</span>
-                    </div>
-                    <div class="card-body">
-                        <span class="porcentagem">75%</span>
-                        <span class="leitos-status">18 / 24</span>
-                    </div>
-                    <div class="barra-progresso-bg">
-                        <div class="barra-progresso-fill" data-width="75%" width="75%"></div>
-                    </div>
-                </div>
-                                <div class="card status-estavel">
-                    <div class="card-header">
                         <span class="setor-nome">CLÍNICA PEDIÁTRICA</span>
                     </div>
                     <div class="card-body">
@@ -462,6 +450,18 @@
                     </div>
                     <div class="barra-progresso-bg">
                         <div class="barra-progresso-fill" data-width="72.41%" width="72.41%"></div>
+                    </div>
+                </div>
+                                <div class="card status-estavel">
+                    <div class="card-header">
+                        <span class="setor-nome">AC - ALOJAMENTO CONJUNTO</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="porcentagem">70.83%</span>
+                        <span class="leitos-status">17 / 24</span>
+                    </div>
+                    <div class="barra-progresso-bg">
+                        <div class="barra-progresso-fill" data-width="70.83%" width="70.83%"></div>
                     </div>
                 </div>
                                 <div class="card status-estavel">
@@ -494,8 +494,8 @@
             <div class="header-unidade">
                 <h2 class="titulo-unidade">Unidades de Observação</h2>
                 <div class="valores-indicadores">
-                    <span class="quantidade-pac-leito">30/64</span>
-                    <strong class="unidade-estavel">46.88%</strong>
+                    <span class="quantidade-pac-leito">31/64</span>
+                    <strong class="unidade-estavel">48.44%</strong>
                 </div>
             </div>            
             <div class="grid-indicadores">
@@ -511,28 +511,16 @@
                         <div class="barra-progresso-fill" data-width="100%" width="100%"></div>
                     </div>
                 </div>
-                                <div class="card status-estavel">
-                    <div class="card-header">
-                        <span class="setor-nome">PAGO</span>
-                    </div>
-                    <div class="card-body">
-                        <span class="porcentagem">70%</span>
-                        <span class="leitos-status">7 / 10</span>
-                    </div>
-                    <div class="barra-progresso-bg">
-                        <div class="barra-progresso-fill" data-width="70%" width="70%"></div>
-                    </div>
-                </div>
-                                <div class="card status-estavel">
+                                <div class="card status-alerta">
                     <div class="card-header">
                         <span class="setor-nome">CPN - CENTRO DE PARTO NORMAL</span>
                     </div>
                     <div class="card-body">
-                        <span class="porcentagem">66.67%</span>
-                        <span class="leitos-status">4 / 6</span>
+                        <span class="porcentagem">83.33%</span>
+                        <span class="leitos-status">5 / 6</span>
                     </div>
                     <div class="barra-progresso-bg">
-                        <div class="barra-progresso-fill" data-width="66.67%" width="66.67%"></div>
+                        <div class="barra-progresso-fill" data-width="83.33%" width="83.33%"></div>
                     </div>
                 </div>
                                 <div class="card status-estavel">
@@ -545,6 +533,18 @@
                     </div>
                     <div class="barra-progresso-bg">
                         <div class="barra-progresso-fill" data-width="66.67%" width="66.67%"></div>
+                    </div>
+                </div>
+                                <div class="card status-estavel">
+                    <div class="card-header">
+                        <span class="setor-nome">PAGO</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="porcentagem">60%</span>
+                        <span class="leitos-status">6 / 10</span>
+                    </div>
+                    <div class="barra-progresso-bg">
+                        <div class="barra-progresso-fill" data-width="60%" width="60%"></div>
                     </div>
                 </div>
                                 <div class="card status-estavel">
@@ -564,11 +564,11 @@
                         <span class="setor-nome">PRONTO ATENDIMENTO PEDIÁTRICO REFERENCIADO</span>
                     </div>
                     <div class="card-body">
-                        <span class="porcentagem">14.29%</span>
-                        <span class="leitos-status">1 / 7</span>
+                        <span class="porcentagem">28.57%</span>
+                        <span class="leitos-status">2 / 7</span>
                     </div>
                     <div class="barra-progresso-bg">
-                        <div class="barra-progresso-fill" data-width="14.29%" width="14.29%"></div>
+                        <div class="barra-progresso-fill" data-width="28.57%" width="28.57%"></div>
                     </div>
                 </div>
                         </section>
@@ -576,7 +576,7 @@
     </main>
     <div class="informacoes">
         <strong>Desenvolvido com 🧠 na USID/SETISD/SUP do HU-UFGD</strong>
-        <small>Atualizado em: 22/10/2026 11:15:00</small>
+        <small>Atualizado em: 22/10/2026 11:30:00</small>
     </div>
 
     <div id="refresh-progress">
