@@ -351,8 +351,8 @@
             <div class="header-unidade">
                 <h2>Unidades de Internação</h2>
                 <div class="valores-indicadores">
-                    <span class="quantidade-pac-leito">149/180</span>
-                    <strong class="unidade-alerta">82.78%</strong>
+                    <span class="quantidade-pac-leito">150/180</span>
+                    <strong class="unidade-alerta">83.33%</strong>
                 </div>
             </div>
             <div class="grid-indicadores">
@@ -406,18 +406,6 @@
                 </div>
                                 <div class="card status-alerta">
                     <div class="card-header">
-                        <span class="setor-nome">UTI ADULTO - B</span>
-                    </div>
-                    <div class="card-body">
-                        <span class="porcentagem">87.50%</span>
-                        <span class="leitos-status">7 / 8</span>
-                    </div>
-                    <div class="barra-progresso-bg">
-                        <div class="barra-progresso-fill" data-width="87.50%" width="87.50%"></div>
-                    </div>
-                </div>
-                                <div class="card status-alerta">
-                    <div class="card-header">
                         <span class="setor-nome">UCI - UNIDADE DE CUIDADOS INTERMEDIÁRIOS NEONATAL</span>
                     </div>
                     <div class="card-body">
@@ -454,6 +442,18 @@
                 </div>
                                 <div class="card status-estavel">
                     <div class="card-header">
+                        <span class="setor-nome">UTI ADULTO - B</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="porcentagem">75%</span>
+                        <span class="leitos-status">6 / 8</span>
+                    </div>
+                    <div class="barra-progresso-bg">
+                        <div class="barra-progresso-fill" data-width="75%" width="75%"></div>
+                    </div>
+                </div>
+                                <div class="card status-estavel">
+                    <div class="card-header">
                         <span class="setor-nome">AC - ALOJAMENTO CONJUNTO</span>
                     </div>
                     <div class="card-body">
@@ -469,11 +469,11 @@
                         <span class="setor-nome">CLÍNICA PEDIÁTRICA</span>
                     </div>
                     <div class="card-body">
-                        <span class="porcentagem">68.97%</span>
-                        <span class="leitos-status">20 / 29</span>
+                        <span class="porcentagem">72.41%</span>
+                        <span class="leitos-status">21 / 29</span>
                     </div>
                     <div class="barra-progresso-bg">
-                        <div class="barra-progresso-fill" data-width="68.97%" width="68.97%"></div>
+                        <div class="barra-progresso-fill" data-width="72.41%" width="72.41%"></div>
                     </div>
                 </div>
                                 <div class="card status-estavel">
@@ -481,11 +481,11 @@
                         <span class="setor-nome">CLÍNICA CIRÚRGICA</span>
                     </div>
                     <div class="card-body">
-                        <span class="porcentagem">43.48%</span>
-                        <span class="leitos-status">10 / 23</span>
+                        <span class="porcentagem">47.83%</span>
+                        <span class="leitos-status">11 / 23</span>
                     </div>
                     <div class="barra-progresso-bg">
-                        <div class="barra-progresso-fill" data-width="43.48%" width="43.48%"></div>
+                        <div class="barra-progresso-fill" data-width="47.83%" width="47.83%"></div>
                     </div>
                 </div>
                         </section>
@@ -504,11 +504,11 @@
                         <span class="setor-nome">PAGO</span>
                     </div>
                     <div class="card-body">
-                        <span class="porcentagem">170%</span>
-                        <span class="leitos-status">17 / 10</span>
+                        <span class="porcentagem">180%</span>
+                        <span class="leitos-status">18 / 10</span>
                     </div>
                     <div class="barra-progresso-bg">
-                        <div class="barra-progresso-fill" data-width="170%" width="170%"></div>
+                        <div class="barra-progresso-fill" data-width="180%" width="180%"></div>
                     </div>
                 </div>
                                 <div class="card status-estavel">
@@ -564,11 +564,11 @@
                         <span class="setor-nome">PRONTO ATENDIMENTO PEDIÁTRICO REFERENCIADO</span>
                     </div>
                     <div class="card-body">
-                        <span class="porcentagem">28.57%</span>
-                        <span class="leitos-status">2 / 7</span>
+                        <span class="porcentagem">14.29%</span>
+                        <span class="leitos-status">1 / 7</span>
                     </div>
                     <div class="barra-progresso-bg">
-                        <div class="barra-progresso-fill" data-width="28.57%" width="28.57%"></div>
+                        <div class="barra-progresso-fill" data-width="14.29%" width="14.29%"></div>
                     </div>
                 </div>
                         </section>
@@ -576,7 +576,7 @@
     </main>
     <div class="informacoes">
         <strong>Desenvolvido com 🧠 na USID/SETISD/SUP do HU-UFGD</strong>
-        <small>Atualizado em: 22/10/2026 15:45:00</small>
+        <small>Atualizado em: 22/10/2026 16:00:00</small>
     </div>
 
     <div id="refresh-progress">
