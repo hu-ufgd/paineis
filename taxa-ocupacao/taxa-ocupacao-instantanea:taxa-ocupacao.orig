@@ -351,8 +351,8 @@
             <div class="header-unidade">
                 <h2>Unidades de Internação</h2>
                 <div class="valores-indicadores">
-                    <span class="quantidade-pac-leito">149/182</span>
-                    <strong class="unidade-alerta">81.87%</strong>
+                    <span class="quantidade-pac-leito">147/182</span>
+                    <strong class="unidade-alerta">80.77%</strong>
                 </div>
             </div>
             <div class="grid-indicadores">
@@ -428,18 +428,6 @@
                         <div class="barra-progresso-fill" data-width="87.50%" width="87.50%"></div>
                     </div>
                 </div>
-                                <div class="card status-alerta">
-                    <div class="card-header">
-                        <span class="setor-nome">AC - ALOJAMENTO CONJUNTO</span>
-                    </div>
-                    <div class="card-body">
-                        <span class="porcentagem">83.33%</span>
-                        <span class="leitos-status">20 / 24</span>
-                    </div>
-                    <div class="barra-progresso-bg">
-                        <div class="barra-progresso-fill" data-width="83.33%" width="83.33%"></div>
-                    </div>
-                </div>
                                 <div class="card status-estavel">
                     <div class="card-header">
                         <span class="setor-nome">UCI - UNIDADE DE CUIDADOS INTERMEDIÁRIOS NEONATAL</span>
@@ -466,6 +454,18 @@
                 </div>
                                 <div class="card status-estavel">
                     <div class="card-header">
+                        <span class="setor-nome">AC - ALOJAMENTO CONJUNTO</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="porcentagem">79.17%</span>
+                        <span class="leitos-status">19 / 24</span>
+                    </div>
+                    <div class="barra-progresso-bg">
+                        <div class="barra-progresso-fill" data-width="79.17%" width="79.17%"></div>
+                    </div>
+                </div>
+                                <div class="card status-estavel">
+                    <div class="card-header">
                         <span class="setor-nome">CLÍNICA PEDIÁTRICA</span>
                     </div>
                     <div class="card-body">
@@ -481,11 +481,11 @@
                         <span class="setor-nome">CLÍNICA CIRÚRGICA</span>
                     </div>
                     <div class="card-body">
-                        <span class="porcentagem">48%</span>
-                        <span class="leitos-status">12 / 25</span>
+                        <span class="porcentagem">44%</span>
+                        <span class="leitos-status">11 / 25</span>
                     </div>
                     <div class="barra-progresso-bg">
-                        <div class="barra-progresso-fill" data-width="48%" width="48%"></div>
+                        <div class="barra-progresso-fill" data-width="44%" width="44%"></div>
                     </div>
                 </div>
                         </section>
@@ -576,7 +576,7 @@
     </main>
     <div class="informacoes">
         <strong>Desenvolvido com 🧠 na USID/SETISD/SUP do HU-UFGD</strong>
-        <small>Atualizado em: 23/10/2026 16:15:00</small>
+        <small>Atualizado em: 23/10/2026 16:30:01</small>
     </div>
 
     <div id="refresh-progress">
