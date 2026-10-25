@@ -351,8 +351,8 @@
             <div class="header-unidade">
                 <h2>Unidades de Internação</h2>
                 <div class="valores-indicadores">
-                    <span class="quantidade-pac-leito">144/182</span>
-                    <strong class="unidade-estavel">79.12%</strong>
+                    <span class="quantidade-pac-leito">142/182</span>
+                    <strong class="unidade-estavel">78.02%</strong>
                 </div>
             </div>
             <div class="grid-indicadores">
@@ -366,18 +366,6 @@
                     </div>
                     <div class="barra-progresso-bg">
                         <div class="barra-progresso-fill" data-width="108.33%" width="108.33%"></div>
-                    </div>
-                </div>
-                                <div class="card status-critico">
-                    <div class="card-header">
-                        <span class="setor-nome">UTI NEONATAL</span>
-                    </div>
-                    <div class="card-body">
-                        <span class="porcentagem">100%</span>
-                        <span class="leitos-status">10 / 10</span>
-                    </div>
-                    <div class="barra-progresso-bg">
-                        <div class="barra-progresso-fill" data-width="100%" width="100%"></div>
                     </div>
                 </div>
                                 <div class="card status-critico">
@@ -404,16 +392,16 @@
                         <div class="barra-progresso-fill" data-width="100%" width="100%"></div>
                     </div>
                 </div>
-                                <div class="card status-alerta">
+                                <div class="card status-critico">
                     <div class="card-header">
-                        <span class="setor-nome">AC - ALOJAMENTO CONJUNTO</span>
+                        <span class="setor-nome">UTI NEONATAL</span>
                     </div>
                     <div class="card-body">
-                        <span class="porcentagem">95.83%</span>
-                        <span class="leitos-status">23 / 24</span>
+                        <span class="porcentagem">100%</span>
+                        <span class="leitos-status">10 / 10</span>
                     </div>
                     <div class="barra-progresso-bg">
-                        <div class="barra-progresso-fill" data-width="95.83%" width="95.83%"></div>
+                        <div class="barra-progresso-fill" data-width="100%" width="100%"></div>
                     </div>
                 </div>
                                 <div class="card status-alerta">
@@ -438,6 +426,18 @@
                     </div>
                     <div class="barra-progresso-bg">
                         <div class="barra-progresso-fill" data-width="88.89%" width="88.89%"></div>
+                    </div>
+                </div>
+                                <div class="card status-alerta">
+                    <div class="card-header">
+                        <span class="setor-nome">AC - ALOJAMENTO CONJUNTO</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="porcentagem">87.50%</span>
+                        <span class="leitos-status">21 / 24</span>
+                    </div>
+                    <div class="barra-progresso-bg">
+                        <div class="barra-progresso-fill" data-width="87.50%" width="87.50%"></div>
                     </div>
                 </div>
                                 <div class="card status-alerta">
@@ -576,7 +576,7 @@
     </main>
     <div class="informacoes">
         <strong>Desenvolvido com 🧠 na USID/SETISD/SUP do HU-UFGD</strong>
-        <small>Atualizado em: 25/10/2026 12:45:00</small>
+        <small>Atualizado em: 25/10/2026 13:00:01</small>
     </div>
 
     <div id="refresh-progress">
