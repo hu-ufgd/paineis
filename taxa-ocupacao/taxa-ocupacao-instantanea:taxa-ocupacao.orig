@@ -351,8 +351,8 @@
             <div class="header-unidade">
                 <h2>Unidades de Internação</h2>
                 <div class="valores-indicadores">
-                    <span class="quantidade-pac-leito">148/180</span>
-                    <strong class="unidade-alerta">82.22%</strong>
+                    <span class="quantidade-pac-leito">147/180</span>
+                    <strong class="unidade-alerta">81.67%</strong>
                 </div>
             </div>
             <div class="grid-indicadores">
@@ -409,11 +409,11 @@
                         <span class="setor-nome">CLÍNICA MÉDICA</span>
                     </div>
                     <div class="card-body">
-                        <span class="porcentagem">94.12%</span>
-                        <span class="leitos-status">32 / 34</span>
+                        <span class="porcentagem">97.06%</span>
+                        <span class="leitos-status">33 / 34</span>
                     </div>
                     <div class="barra-progresso-bg">
-                        <div class="barra-progresso-fill" data-width="94.12%" width="94.12%"></div>
+                        <div class="barra-progresso-fill" data-width="97.06%" width="97.06%"></div>
                     </div>
                 </div>
                                 <div class="card status-alerta">
@@ -442,26 +442,14 @@
                 </div>
                                 <div class="card status-estavel">
                     <div class="card-header">
-                        <span class="setor-nome">UTI ADULTO - B</span>
-                    </div>
-                    <div class="card-body">
-                        <span class="porcentagem">75%</span>
-                        <span class="leitos-status">6 / 8</span>
-                    </div>
-                    <div class="barra-progresso-bg">
-                        <div class="barra-progresso-fill" data-width="75%" width="75%"></div>
-                    </div>
-                </div>
-                                <div class="card status-estavel">
-                    <div class="card-header">
                         <span class="setor-nome">AC - ALOJAMENTO CONJUNTO</span>
                     </div>
                     <div class="card-body">
-                        <span class="porcentagem">70.83%</span>
-                        <span class="leitos-status">17 / 24</span>
+                        <span class="porcentagem">66.67%</span>
+                        <span class="leitos-status">16 / 24</span>
                     </div>
                     <div class="barra-progresso-bg">
-                        <div class="barra-progresso-fill" data-width="70.83%" width="70.83%"></div>
+                        <div class="barra-progresso-fill" data-width="66.67%" width="66.67%"></div>
                     </div>
                 </div>
                                 <div class="card status-estavel">
@@ -474,6 +462,18 @@
                     </div>
                     <div class="barra-progresso-bg">
                         <div class="barra-progresso-fill" data-width="65.22%" width="65.22%"></div>
+                    </div>
+                </div>
+                                <div class="card status-estavel">
+                    <div class="card-header">
+                        <span class="setor-nome">UTI ADULTO - B</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="porcentagem">62.50%</span>
+                        <span class="leitos-status">5 / 8</span>
+                    </div>
+                    <div class="barra-progresso-bg">
+                        <div class="barra-progresso-fill" data-width="62.50%" width="62.50%"></div>
                     </div>
                 </div>
                                 <div class="card status-estavel">
@@ -494,33 +494,33 @@
             <div class="header-unidade">
                 <h2 class="titulo-unidade">Unidades de Observação</h2>
                 <div class="valores-indicadores">
-                    <span class="quantidade-pac-leito">47/64</span>
-                    <strong class="unidade-estavel">73.44%</strong>
+                    <span class="quantidade-pac-leito">38/64</span>
+                    <strong class="unidade-estavel">59.38%</strong>
                 </div>
             </div>            
             <div class="grid-indicadores">
                                 <div class="card status-critico">
                     <div class="card-header">
-                        <span class="setor-nome">POSTO DE SUPORTE AMBULATORIAL</span>
-                    </div>
-                    <div class="card-body">
-                        <span class="porcentagem">183.33%</span>
-                        <span class="leitos-status">11 / 6</span>
-                    </div>
-                    <div class="barra-progresso-bg">
-                        <div class="barra-progresso-fill" data-width="183.33%" width="183.33%"></div>
-                    </div>
-                </div>
-                                <div class="card status-critico">
-                    <div class="card-header">
                         <span class="setor-nome">PAGO</span>
                     </div>
                     <div class="card-body">
-                        <span class="porcentagem">140%</span>
-                        <span class="leitos-status">14 / 10</span>
+                        <span class="porcentagem">150%</span>
+                        <span class="leitos-status">15 / 10</span>
                     </div>
                     <div class="barra-progresso-bg">
-                        <div class="barra-progresso-fill" data-width="140%" width="140%"></div>
+                        <div class="barra-progresso-fill" data-width="150%" width="150%"></div>
+                    </div>
+                </div>
+                                <div class="card status-estavel">
+                    <div class="card-header">
+                        <span class="setor-nome">CPN - CENTRO DE PARTO NORMAL</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="porcentagem">66.67%</span>
+                        <span class="leitos-status">4 / 6</span>
+                    </div>
+                    <div class="barra-progresso-bg">
+                        <div class="barra-progresso-fill" data-width="66.67%" width="66.67%"></div>
                     </div>
                 </div>
                                 <div class="card status-estavel">
@@ -533,18 +533,6 @@
                     </div>
                     <div class="barra-progresso-bg">
                         <div class="barra-progresso-fill" data-width="54.84%" width="54.84%"></div>
-                    </div>
-                </div>
-                                <div class="card status-estavel">
-                    <div class="card-header">
-                        <span class="setor-nome">CPN - CENTRO DE PARTO NORMAL</span>
-                    </div>
-                    <div class="card-body">
-                        <span class="porcentagem">50%</span>
-                        <span class="leitos-status">3 / 6</span>
-                    </div>
-                    <div class="barra-progresso-bg">
-                        <div class="barra-progresso-fill" data-width="50%" width="50%"></div>
                     </div>
                 </div>
                                 <div class="card status-estavel">
@@ -571,12 +559,24 @@
                         <div class="barra-progresso-fill" data-width="14.29%" width="14.29%"></div>
                     </div>
                 </div>
+                                <div class="card status-estavel">
+                    <div class="card-header">
+                        <span class="setor-nome">POSTO DE SUPORTE AMBULATORIAL</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="porcentagem">0%</span>
+                        <span class="leitos-status">0 / 6</span>
+                    </div>
+                    <div class="barra-progresso-bg">
+                        <div class="barra-progresso-fill" data-width="0%" width="0%"></div>
+                    </div>
+                </div>
                         </section>
 
     </main>
     <div class="informacoes">
         <strong>Desenvolvido com 🧠 na USID/SETISD/SUP do HU-UFGD</strong>
-        <small>Atualizado em: 28/10/2026 17:30:01</small>
+        <small>Atualizado em: 28/10/2026 17:45:01</small>
     </div>
 
     <div id="refresh-progress">
