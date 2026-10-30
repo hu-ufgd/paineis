@@ -528,11 +528,11 @@
                         <span class="setor-nome">PRONTO ATENDIMENTO PEDIÁTRICO REFERENCIADO</span>
                     </div>
                     <div class="card-body">
-                        <span class="porcentagem">71.43%</span>
-                        <span class="leitos-status">5 / 7</span>
+                        <span class="porcentagem">57.14%</span>
+                        <span class="leitos-status">4 / 7</span>
                     </div>
                     <div class="barra-progresso-bg">
-                        <div class="barra-progresso-fill" data-width="71.43%" width="71.43%"></div>
+                        <div class="barra-progresso-fill" data-width="57.14%" width="57.14%"></div>
                     </div>
                 </div>
                                 <div class="card status-estavel">
@@ -549,19 +549,19 @@
                 </div>
                                 <div class="card status-estavel">
                     <div class="card-header">
-                        <span class="setor-nome">POSTO DE SUPORTE AMBULATORIAL</span>
+                        <span class="setor-nome">CPN - CENTRO DE PARTO NORMAL</span>
                     </div>
                     <div class="card-body">
-                        <span class="porcentagem">0%</span>
-                        <span class="leitos-status">0 / 6</span>
+                        <span class="porcentagem">16.67%</span>
+                        <span class="leitos-status">1 / 6</span>
                     </div>
                     <div class="barra-progresso-bg">
-                        <div class="barra-progresso-fill" data-width="0%" width="0%"></div>
+                        <div class="barra-progresso-fill" data-width="16.67%" width="16.67%"></div>
                     </div>
                 </div>
                                 <div class="card status-estavel">
                     <div class="card-header">
-                        <span class="setor-nome">CPN - CENTRO DE PARTO NORMAL</span>
+                        <span class="setor-nome">POSTO DE SUPORTE AMBULATORIAL</span>
                     </div>
                     <div class="card-body">
                         <span class="porcentagem">0%</span>
@@ -576,7 +576,7 @@
     </main>
     <div class="informacoes">
         <strong>Desenvolvido com 🧠 na USID/SETISD/SUP do HU-UFGD</strong>
-        <small>Atualizado em: 30/10/2026 10:15:00</small>
+        <small>Atualizado em: 30/10/2026 10:30:00</small>
     </div>
 
     <div id="refresh-progress">
