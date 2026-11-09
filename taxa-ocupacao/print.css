@@ -1,0 +1,103 @@
+nav, .modal, .botoes, footer, div.chip{
+    display: none;
+}
+
+body{
+    font-family: Ubuntu, Arial, sans-serif;
+}
+
+.chip{
+    height: 0 !important;
+}
+
+*{
+    padding: 0 !important;
+    margin: 0;
+    border: none !important;
+    background-color: transparent;
+}
+
+.titulo-grupo{
+    /* border-top: solid 1px #ccc; */
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 4pt;
+    margin: 0;
+}
+h4{
+    font-size: 12pt;
+}
+
+h5{
+    font-size: 10pt;
+    font-weight: 300;
+    padding: 5pt 0 3pt 0;
+}
+
+div.layout-colunas-2 .coluna{
+    width: 49.5%;
+    float: left;
+}
+
+div.layout-colunas-3 .coluna{
+    width: 33%;
+    float: left;
+}
+
+.conteudo-exame-fisico ul li strong{
+    font-family: Arial, sans-serif;
+    font-size: 10pt;
+}
+
+.conteudo-exame-fisico ul li{
+    /*font-size: 10pt; */
+    font-family: "Times", serif;
+}
+
+li{
+    /*padding: 2px; */
+}
+
+li.layout-colunas-2{
+    width: 48%;
+    float: left;
+}
+
+div.header-report-ebserh{
+    padding-left: 72.3mm; /* evitar a área dos ícones, deslocando o elemento para a área verde*/
+    text-align: center;
+    font-family: Ubuntu;
+    color: white;
+    padding-top: 8px; /* garantir que o div filho eseja alinhado com o limiete entre verde/branco próximo aos ícones*/
+    height: 14.5mm;
+}
+div.header-exame-fisico {
+    height: 50px; /* o tamanho máximo do div, para ficar limitado à área verde da imagem de fundo*/
+    line-height: 50px; /* esta propriedade com valor igual a altura do div garante alinhamento vertical no meio da 'célula'*/
+    font-size: 30px;    
+    text-decoration: bold;
+}
+
+div.header-requisicao-cultura {
+    height: 50px; /* o tamanho máximo do div, para ficar limitado à área verde da imagem de fundo*/
+    line-height: 25px; /* esta propriedade com valor igual a altura do div garante alinhamento vertical no meio da 'célula'*/
+    font-size: 22px;    
+    text-decoration: bold;
+}
+
+div.footer-report-ebserh{
+    font-family: "Times New Roman", serif;
+    font-size: 6pt;
+    width: 100%;
+}
+
+div.footer-exame-fisico div{
+    display: block;
+    height: 10mm;
+}
+
+div.referencia-pagina{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}

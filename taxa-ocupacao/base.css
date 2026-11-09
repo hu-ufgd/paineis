@@ -1,0 +1,469 @@
+html, input, button, p, span {
+    font-family: "Google Sans" !important;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+main {
+    flex: 1 0 auto;
+    margin-top: 25px;
+}
+
+/* BARRA DE MENU */
+nav {
+    z-index: 2;
+    border-bottom: 1px solid #dadce0;
+    background-color: #fff;
+    box-shadow: 0 0 0 0;
+}
+
+#menu-topo {
+    position: fixed;
+    top: 0px;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.25);
+}
+
+nav ul a, .icone-menu {
+    color: #212121;
+}
+
+.icone-menu {
+    margin-left: 0 !important;
+}
+
+.top-navbar, .container-aumentado, .container-footer {
+    margin: 0 auto;
+    width: 91%;
+}
+
+.nav-topo-sistema, .itens-barra-ferramentas, a.icone-barra-menu{
+    height: 45px;
+}
+
+#menu-botoes {
+    position: fixed;
+    top: 45px;
+}
+
+.li-busca {
+    width: 30%;
+}
+
+/*.sombra-menu-topo {
+    border-radius: 2px;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.25);
+}*/
+
+.dropdown-content li > a, .dropdown-content li > span, .sidenav li > a > i.material-icons {
+    color: rgba(0,0,0,0.87);
+}
+
+/* substituido pela classe truncate
+.span-menu {
+    white-space: nowrap;
+    width: 50% !important;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}*/
+
+/* BARRA DE PESQUISA */
+nav .input-field label.active i {
+    color: #e0e0e0;
+}
+
+.div-pesquisa {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.div-pesquisa-mobile {
+    margin: 0 auto;
+    width: 88%;
+}
+
+.input-pesquisa-mobile {
+    position: relative;
+    left: 6%;
+}
+
+fieldset:not(.formulario) {
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+    border: none;
+    padding: 40px;
+}
+
+span.header {
+    display: block;
+    font-size: 2.28em;
+    line-height: 110%;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+fieldset:not(.formulario) legend {
+    display: block;
+    position: relative;
+    top: 30px;
+    font-size: 2.28em;
+    line-height: 110%;
+}
+
+fieldset:not(.formulario) > div {
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+
+fieldset.formulario{
+    border: none;
+    margin-left: -1px;
+}
+
+fieldset.formulario{
+    border: solid 1px silver;
+    padding: 13px 24px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    min-height: 135px;
+}
+
+fieldset.formulario legend{
+    font-size: 16pt;
+    font-weight: bold;
+    font-family: "Google Sans", "Roboto", Arial;
+    padding: 2px 4px;
+    margin-bottom: 16px;
+}
+div#sidenav-overlay {
+    z-index: 0;
+}
+
+.chip{
+    height: auto !important;
+}
+
+ul.side-nav.fixed li {
+    line-height: 44px;
+}
+
+.sidenav-overlay {
+    z-index: 0 !important;
+}
+
+#slide-out li input {
+    padding-left: 1rem;
+}
+
+.card:hover {
+    box-shadow: 0 2px 6px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+}
+
+/* TABELAS */
+table tbody tr td form {
+    display: inline !important;
+}
+
+table tbody tr td{
+    padding: 2px !important;
+    height: 48px !important;
+    border-radius: 0 !important;
+}
+
+table tbody tr td div.acoes a {
+    opacity: 0.05;
+    transition-property: opacity;
+    transition-duration: 0.5s;
+}
+
+table tbody tr:hover td div.acoes a {
+    opacity: 0.3;
+}
+
+table tbody tr:hover td div.acoes a:hover {
+    opacity: 1;
+}
+
+table tbody tr:hover td div.acoes a.bt-excluir:hover {
+    color: red !important;
+}
+
+table {
+    max-width: 100%;
+}
+
+td {
+    max-width: 33.33%;
+}
+
+select.nao-material {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #9e9e9e;
+    outline: none;
+    height: 3rem;
+    line-height: 3rem;
+    width: 100%;
+    font-size: 1rem;
+    margin: 0 0 15px 0;
+    padding: 0;
+    display: block;
+}
+
+#carregando {
+    top: 64px !important;
+    position: fixed;    
+    margin: 0 !important;
+    z-index: 2;
+}
+
+/* logo do sistema na barra de menus */
+.logo-sistema {
+    max-width: 38px;
+    margin-top: 12px;
+    outline: none;
+}
+
+.titulo-sistema {
+    color: #212121;
+    position: relative;
+    bottom: 1px;
+    left: 17px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.link-inicio {
+    position: relative;
+    /*    bottom: 4px;*/
+}
+
+/*Card de prováveis informações de ajuda dos campos... */
+.helper{
+    position: absolute !important;
+    bottom: 85px;
+    right: 150px;
+    width: 280px;
+    padding-left: 25px;
+    height: auto;
+    display: none;
+    text-align: justify;
+}
+
+.helper div{
+    display: table-row;
+}
+
+.helper div div{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.helper:after,
+.helper:before {
+    left: -2px;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+helper:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-left-color: #ffffff;
+    border-width: 15px;
+    top: 2.15rem;
+    margin-top: -15px;
+}
+
+helper:before {
+    border-color: rgba(240, 135, 25, 0);
+    border-left-color: #37474f;
+    border-width: 16px;
+    top: 32px;
+    margin-top: -18px;
+    left: 0px;
+}
+
+helper strong {
+    color: #17469e;
+}
+
+helper p:first-child {
+    margin-top: 0;
+}
+
+div.card-panel.readonly-card{
+    background-color: #f9a825 !important;
+}
+
+div.card-panel.required-card{
+    background-color: #b71c1c !important;
+} /* Fim do card */
+
+span.legenda{
+    background-image: radial-gradient(#b71c1c  15%, transparent 16%), radial-gradient(#b71c1c  15%, transparent 16%);
+    background-size: 30px 30px;
+    background-position: center  left;
+    background-repeat: no-repeat;
+    padding-left: 25px;
+}
+
+form div.row{
+    margin-bottom: 20px;
+}
+
+/*  deixar a linha inferior do input com a cor vermelha para os campos required*/
+input[required]:focus:not([readonly]) {
+    border-bottom-color: #b71c1c  !important;
+    box-shadow: 0 1px 0 0 #b71c1c;
+}
+
+input[readonly]:focus{
+    border-bottom-color: #f9a825  !important;
+    box-shadow: 0 1px 0 0 #f9a825;
+}
+
+/*input[required], select[required], div.required .select-dropdown {*/
+input[required], select[required], div.required .select2 .select2-selection {
+    background-image: radial-gradient(#b71c1c 15%, transparent 16%), radial-gradient(#b71c1c 15%, transparent 16%);
+    background-size: 30px 30px; 
+    background-position: center right;
+    background-repeat: no-repeat;
+}
+
+input[readonly], select[readonly], div.readonly.select-dropdown {
+    background-image: radial-gradient(#f9a825 15%, transparent 16%), radial-gradient(#f9a825 15%, transparent 16%);
+    background-size: 30px 30px;
+    background-position: center  right;
+    background-repeat: no-repeat;
+}
+
+.side-nav .collapsible-body li.active, .side-nav.fixed .collapsible-body li.active {
+    background-color: #263238;
+}
+
+a#titulo-pagina-id {
+    position: relative;
+    bottom: 13px;
+    font-size: 24px;
+    width: 155px;
+    overflow: visible;
+    font-weight: bold;
+}
+
+div.fixed-action-btn{
+    bottom: 42px; 
+    right: 70px;
+}
+
+/*sombras para estados de elementos*/
+.sombra-erro{
+    box-shadow: 0px 0px 8px rgba(244, 67, 54, 0.6);
+}
+
+.sombra-sucesso{
+    box-shadow: 0px 0px 8px rgba(76, 175, 80, 0.6);
+}
+
+button:focus{
+    color: white;
+    background-color: #37474f;
+}
+
+div.colunas{
+    -webkit-column-gap: 1em;
+    -moz-column-gap: 1em;
+    column-gap: 1em;   
+
+    -webkit-column-rule: 0.5px solid #9c9e9f;
+    -moz-column-rule: 0.5px solid #9c9e9f;
+    column-rule: 0.5px solid #9c9e9f;
+}
+
+.campo-label {
+    font-size: 15px !important;
+}
+
+
+/* Manipulacao do select2 para o estilo do Materialize */
+.select2-container--default .select2-selection--single {
+    background-color: #fff;
+    border: 0;
+    border-bottom: 1px solid #9e9e9e !important;
+    border-radius: 0 !important;
+    height: 3.38rem;
+    outline: none;
+}
+
+.select2 {
+    width: 100% !important;
+    text-decoration: none !important;
+}
+
+.select2-div {
+    height: 3.3rem;
+}
+
+.select2-dropdown {
+    border: 0 !important;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 
+        0 1px 5px 0 rgba(0,0,0,0.12), 
+        0 3px 1px -2px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* alteracao cores dos itens nao selecionados no select */
+.select2-results li {
+    font-size: 16px;
+    display: block;
+    color: black !important;
+    line-height: 22px;
+    padding: 14px 16px;
+}
+
+/* linha inferior do select destaca cor (required ou nao) apos selecao*/
+select[required], div.required .select2 .select2-selection:focus {
+    border-bottom-color: #b71c1c !important;
+    box-shadow: 0 1px 0 0 #b71c1c;
+}
+
+select, .select2 .select2-selection:focus {
+    border-bottom-color: #26a69a !important;
+    box-shadow: 0 1px 0 0 #26a69a;
+}
+
+
+/* selects com required 
+select[required], .select2-container--default .select2-results__option .select2-results__option--highlighted[aria-selected] {
+    background-color: #b71c1c !important;
+}*/
+
+.select2-container--default .select2-search--dropdown .select2-search__field {
+    border-top: 0 !important;
+    border-right: 0 !important;
+    border-left: 0 !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+    border-color: #000 transparent transparent transparent;
+    top: 100%;
+}
+
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+    border-color: transparent transparent #000 transparent;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 50px;
+    padding-left: 0;
+}
+
+td.icone, span.icone {
+    font-size: 24px;
+}
