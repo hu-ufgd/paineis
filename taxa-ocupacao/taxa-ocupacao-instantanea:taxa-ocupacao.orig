@@ -1,203 +1,627 @@
 <!DOCTYPE html>
-<html lang="pt">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-        <meta name="theme-color" content="#f9a825"/>
-        <title>Painéis Hospitalares</title>
-        <link rel="icon" href="/paineis/assets/img/paineis-favicon.png">
-        <link rel="icon" href="/paineis/assets/img/paineis-favicon-128.png" sizes="128x128">
-        <link rel="icon" href="/paineis/assets/img/paineis-favicon-144.png" sizes="144x144">
-        <link href="http://10.18.0.82/static/css/fontes.css" rel="stylesheet" type="text/css" media="screen,projection,print" />
-        <link href="http://10.18.0.82/static/materialize/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection,print"/>
-        <link href="/base/assets/css/mediaqueries.css" type="text/css" rel="stylesheet" media="screen,projection,print"/>
-        <link href="/base/assets/css/print.css" type="text/css" rel="stylesheet" media="print"/>
-        <link href="/base/assets/css/select2.min.css" rel="stylesheet" />
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="">
+    <link rel="icon" href="/paineis/assets/img/paineis-favicon.png">
+    <link rel="icon" href="/paineis/assets/img/paineis-favicon-128.png" sizes="128x128">
+    <link rel="icon" href="/paineis/assets/img/paineis-favicon-144.png" sizes="144x144">
+    <title>Taxa de Ocupação </title>
+    <link href="http://10.18.0.82/static/css/fontes.css" rel="stylesheet" type="text/css" media="screen,projection,print" />
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: Roboto, Arial, sans-serif;
+        }
 
-        <link href="/base/assets/css/base.css" type="text/css" rel="stylesheet" media="screen,projection"/>        
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+    <title>Taxa de Ocupação </title>
+</head>
 
-        <style type="text/css">
-            blockquote {
-                border-left-color: #f9a825;
-            }
-/*            
-            @media print {
-                * {
-                    display: none;
-                }
-            }*/
-
-            select, .select2 .select2-selection:focus {
-                border-bottom-color: #f9a825; !important;
-                box-shadow: 0 1px 0 0 #f9a825;
-            }
-
-            /* select sem required */
-            .select2-container--default .select2-results__options .select2-results__option--highlighted[aria-selected] {
-                background-color: #f9a825; !important;
-                color: white;
-            }
-            
-            .select2-results__option .select2-results__option--highlighted{
-                background-color: white !important;
-                color: #f9a825 !important;
-            }
-
-        </style>
-
+<body>
+    
+    <div class="container">
         
-    </head>
-    <body>
+<style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: Roboto, Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            background-color: #f4f6f9;
+            color: #333;
+            padding: 0 24px;
+        }
+
+        header {
+            margin-bottom: 32px;
+            padding-bottom: 16px;
+            margin-bottom: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        img.logo{
+            width: 142px;
+            height: auto;
+        }
         
-<!--Barra de menu-->
-<nav id="menu-topo" class="nav-botao-sistema white ">
-    <div class="nav-wrapper top-navbar">
-        <a href="/paineis" class="link-inicio tooltipped" data-position="right" data-tooltip="Página inicial">
-            <img src="/paineis/assets/img/paineis.png" class="logo-sistema">
-            <span class="titulo-sistema" style="color: #f9a825;">Painéis</span>
-        </a>
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger icone-menu"><i class="material-icons">menu</i></a>
+        .header-unidade{
+            display: flex;
+            /* border-bottom: 2px solid #e2e8f0; */
+            flex-direction: row;
+            justify-content: space-between;
+            font-size: 24px;
+        }
+        header h1 {
+            font-size: 27px;
+            color: #1e293b;
+            margin-bottom: 4px;
+        }
+        header p {
+            color: #64748b;
+            font-size: 14px;
+        }
 
-        <ul class="right hide-on-med-and-down">
-                    </ul>
+        /* ESTRUTURA DAS DUAS COLUNAS PRINCIPAIS */
+        .dashboard-container {
+            display: grid;
+            grid-template-columns: 1fr; /* Em telas pequenas fica uma embaixo da outra */
+            gap: 32px;
+            align-items: stretch;
+        }
 
-        <!-- menu redimensionado-->
-        <ul class="sidenav hide-on-large-only" id="mobile-demo">
-            <li><a href = "/paineis/login"><i class="material-icons left">exit_to_app</i>Entrar</a></li>        </ul>
+        .coluna-unidade {
+            background: rgba(255, 255, 255, 0.4);
+            padding: 16px;
+            border-radius: 16px;
+            border: 1px dashed #cbd5e1;
+        }
 
-    </div>
+        .coluna-unidade h2 {
+            font-size: 18px;
+            color: #1e293b;
+            margin-bottom: 20px;
+            padding-bottom: 8px;
+            border-bottom: 3px solid #cbd5e1;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
 
-    </nav>
-        <div class="progress" id="carregando" style="background-color: #f9a825; display: none;">
-            <div class="indeterminate"></div>
+        /* A GRID DE INDICADORES INTERNA */
+        .grid-indicadores {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        /* Estilização dos Cards */
+        .card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border-top: 4px solid #cbd5e1;
+        }
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+            gap: 8px;
+        }
+        .setor-nome {
+            font-size: 14px;
+            font-weight: 600;
+            color: #475569;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 100%;
+        }
+        .leitos-status {
+            font-size: 12px;
+            color: #94a3b8;
+            font-weight: 500;
+            white-space: nowrap;
+        }
+        .card-body {
+            display: flex;
+            align-items: baseline;
+            margin-bottom: 16px;
+            justify-content: space-between;
+        }
+        .porcentagem {
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 1;
+            margin-right: 8px;
+        }
+
+        /* Barra de Progresso */
+        .barra-progresso-bg {
+            background-color: #e2e8f0;
+            border-radius: 9999px;
+            height: 8px;
+            width: 100%;
+            overflow: hidden;
+        }
+        .barra-progresso-fill {
+            height: 100%;
+            border-radius: 9999px;
+            transition: width 0.5s ease-in-out;
+        }
+
+        div.informacoes {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            justify-content: space-between;
+            align-items: flex-end;
+            color: #64748b;
+            font-size: 12px;
+            position: fixed;
+            right: 12px;
+            bottom: 12px;
+        }
+
+        div.valores-indicadores strong{
+            font-size: 36px;
+            line-height: 36px;
+        }
+
+        div.valores-indicadores span{
+            font-size: 16px;
+            line-height: 24px;
+            margin-right: 16px;
+            color: #93acd1;            
+        }
+
+
+        /* Classes de Alerta */
+        .unidade-critica {
+            color: #ef4444;
+        }
+        .status-critico { border-top-color: #ef4444; }
+        .status-critico .porcentagem { color: #b91c1c; }
+        .status-critico .barra-progresso-fill { background-color: #ef4444; }
+
+        .unidade-alerta {
+            color: #f59e0b;
+        }
+        .status-alerta { border-top-color: #f59e0b; }
+        .status-alerta .porcentagem { color: #b45309; }
+        .status-alerta .barra-progresso-fill { background-color: #f59e0b; }
+
+        .unidade-estavel {
+            color: #10b981;
+        }
+        .status-estavel { border-top-color: #10b981; }
+        .status-estavel .porcentagem { color: #047857; }
+        .status-estavel .barra-progresso-fill { background-color: #10b981; }
+
+
+        /* REGRAS PARA TELAS MENORES QUE 1130PX (TABLETS / CELULARES) */
+        @media (max-width: 1135px ){
+            body{
+                padding: 0px 8px;
+            }
+
+            p{
+                margin-block-start: 4px;
+                margin-block-end: 4px;
+            }
+
+            h1{
+                margin-block-start: 4px;
+                margin-block-end: 4px;
+            }
+
+            h2{
+                margin-block-start: 0;
+                margin-block-end: 0;
+            }
+            .dashboard-container {
+                grid-template-columns: 1fr 1fr; /* Divide a tela exatamente em 2 colunas */
+                gap: 12px;
+            }
+            .grid-indicadores {
+                grid-template-columns: 1fr 1fr 1fr; /* 2 colunas de cards dentro de cada unidade */
+                gap: 8px;
+            }
+            .card {
+                padding: 8px;
+                width: 150px; /* Largura flui conforme a grid pai */
+                border-radius: 4px;
+            }
+            .card-body {
+                margin-bottom: 4px;
+            }
+            .barra-progresso-bg {
+                height: 4px;
+            }
+            .setor-nome {
+                font-size: 11px;
+            }
+            .porcentagem {
+                font-size: 24px;
+            }
+
+            .coluna-unidade h2{
+                margin-bottom: 12px;
+                border-bottom-width: 1px;
+            }
+
+            div.valores-indicadores strong{
+                font-size: 24px;
+                line-height: 24px;
+            }
+
+            div.valores-indicadores span{
+                font-size: 16px;
+                line-height: 24px;
+            }
+
+            div.valores-indicadores span{
+                margin-right: 8px;
+                color: #93acd1;
+            }
+        }
+
+        /* REGRAS PARA TELAS ACIMA DE 3000PX (TVs / PAINÉIS DE PAREDE) */
+        @media( min-width: 3000px){
+            header h1 {
+                font-size: 72px;
+                margin-bottom: 12px;
+            }
+            header p {
+                font-size: 48px;
+            }
+            .dashboard-container {
+                gap: 64px;
+            }
+            .coluna-unidade h2 {
+                font-size: 48px;
+                margin-bottom: 32px;
+                border-bottom-width: 6px;
+            }
+            .grid-indicadores {
+                gap: 32px;
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .leitos-status {
+                font-size: 36px;
+            }
+            .card {
+                padding: 32px;
+                width: 90%;
+            }
+            .barra-progresso-bg {
+                height: 16px;
+            }
+            .setor-nome {
+                font-size: 32px;
+                max-width: 70%;
+            }
+            .porcentagem {
+                font-size: 64pt;
+                padding: 12px 0;
+            }
+        }
+
+        #refresh-progress {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 4px;
+            background: rgba(0,0,0,.15);
+            z-index: 999999;
+        }
+        #refresh-progress-bar {
+            height: 100%;
+            width: 0%;
+            background: #2196F3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Ocupação Instantânea Hospitalar</h1>
+            <p>Status em tempo real dos pacientes presentes e de leitos ativos</p>    
         </div>
-        <main>
-            
-            <div class="container-aumentado">
-                
-                
-<h4>Erro</h4>
-<p>O sistema encontrou um erro com a seguinte mensagem: </p>
-<pre>
-    7:    SQLSTATE[08006] [7] FATAL:  password authentication failed for user "ugen_integra"
-FATAL:  password authentication failed for user "ugen_integra"</pre>
+        <img class="logo" src="/paineis/assets/img/logo-hubrasil.svg" alt="HUBrasil" />
+    </header>
 
+    <!-- Container do Dashboard dividido em duas áreas -->
+    <main class="dashboard-container">
 
-<!-- div class="row">
-    <div class="col s6">
-        <fieldset>
-        <legend>Chamado ao SGPTI</legend>
-
-            <div class="card-panel">
-                Deseja abir um chamado para este erro?
-            </div>
-
-            <form class="form" method="post" action="/paineis/glpi/newissue">
-                <input type="hidden" name="chamado[username]" value="(usuario nao logado)" />
-                <input type="hidden" name="chamado[sistema_id]" value="0" />
-                <input type="hidden" name="chamado[mensagem]" value="SQLSTATE[08006] [7] FATAL:  password authentication failed for user "ugen_integra"
-FATAL:  password authentication failed for user "ugen_integra"" />
-
-                <button class="btn-primary btn-large red" >Abrir chamado</button>
-                <a class="btn grey " href="/paineis/">Não</a>   
-            </form>
-        </fieldset>
-    </div>
-</div -->        
-
-            </div>
-        </main>
-        <div class="card-panel helper teal required-card" data-ng-bind-html="description">
-            <div>
-                <div>
-                    <span class="white-text"></span>
+        <section class="coluna-unidade">
+            <div class="header-unidade">
+                <h2>Unidades de Internação</h2>
+                <div class="valores-indicadores">
+                    <span class="quantidade-pac-leito">142/180</span>
+                    <strong class="unidade-estavel">78.89%</strong>
                 </div>
             </div>
-        </div>
-        
-<footer class="page-footer white">
-    <div class="container-footer" style="border-top: 1px solid rgba(0,0,0,0.14);">
-        <div class="row">
-            <div class="col s9">
-                <h6 class="black-text">Painéis Hospitalares</h6>
-                <a class="black-text" href="http://sistemas.hugd.ebserh.net/" target="_blank">Catálogo de Sistemas - SETISD</a>
-            </div>
-            <div class="col s9">
-                <a class="black-text" href="http://ebserh.gov.br/web/hu-ufgd" target="_blank">© 2026 Hospital Universitário da UFGD</a>
-            </div>
-        </div>
+            <div class="grid-indicadores">
+                                <div class="card status-critico">
+                    <div class="card-header">
+                        <span class="setor-nome">UTI NEONATAL</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="porcentagem">120%</span>
+                        <span class="leitos-status">12 / 10</span>
+                    </div>
+                    <div class="barra-progresso-bg">
+                        <div class="barra-progresso-fill" data-width="120%" width="120%"></div>
+                    </div>
+                </div>
+                                <div class="card status-critico">
+                    <div class="card-header">
+                        <span class="setor-nome">CLÍNICA MÉDICA</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="porcentagem">102.94%</span>
+                        <span class="leitos-status">35 / 34</span>
+                    </div>
+                    <div class="barra-progresso-bg">
+                        <div class="barra-progresso-fill" data-width="102.94%" width="102.94%"></div>
+                    </div>
+                </div>
+                                <div class="card status-critico">
+                    <div class="card-header">
+                        <span class="setor-nome">UTI ADULTO - A</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="porcentagem">100%</span>
+                        <span class="leitos-status">6 / 6</span>
+                    </div>
+                    <div class="barra-progresso-bg">
+                        <div class="barra-progresso-fill" data-width="100%" width="100%"></div>
+                    </div>
+                </div>
+                                <div class="card status-alerta">
+                    <div class="card-header">
+                        <span class="setor-nome">CLÍNICA MÉDICA PSIQUIÁTRICA</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="porcentagem">88.89%</span>
+                        <span class="leitos-status">8 / 9</span>
+                    </div>
+                    <div class="barra-progresso-bg">
+                        <div class="barra-progresso-fill" data-width="88.89%" width="88.89%"></div>
+                    </div>
+                </div>
+                                <div class="card status-alerta">
+                    <div class="card-header">
+                        <span class="setor-nome">AC - ALOJAMENTO CONJUNTO</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="porcentagem">87.50%</span>
+                        <span class="leitos-status">21 / 24</span>
+                    </div>
+                    <div class="barra-progresso-bg">
+                        <div class="barra-progresso-fill" data-width="87.50%" width="87.50%"></div>
+                    </div>
+                </div>
+                                <div class="card status-alerta">
+                    <div class="card-header">
+                        <span class="setor-nome">UTI ADULTO - B</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="porcentagem">87.50%</span>
+                        <span class="leitos-status">7 / 8</span>
+                    </div>
+                    <div class="barra-progresso-bg">
+                        <div class="barra-progresso-fill" data-width="87.50%" width="87.50%"></div>
+                    </div>
+                </div>
+                                <div class="card status-estavel">
+                    <div class="card-header">
+                        <span class="setor-nome">UCI - UNIDADE DE CUIDADOS INTERMEDIÁRIOS NEONATAL</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="porcentagem">80%</span>
+                        <span class="leitos-status">12 / 15</span>
+                    </div>
+                    <div class="barra-progresso-bg">
+                        <div class="barra-progresso-fill" data-width="80%" width="80%"></div>
+                    </div>
+                </div>
+                                <div class="card status-estavel">
+                    <div class="card-header">
+                        <span class="setor-nome">CLÍNICA CIRÚRGICA</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="porcentagem">65.22%</span>
+                        <span class="leitos-status">15 / 23</span>
+                    </div>
+                    <div class="barra-progresso-bg">
+                        <div class="barra-progresso-fill" data-width="65.22%" width="65.22%"></div>
+                    </div>
+                </div>
+                                <div class="card status-estavel">
+                    <div class="card-header">
+                        <span class="setor-nome">CLÍNICA OBSTÉTRICA</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="porcentagem">58.33%</span>
+                        <span class="leitos-status">7 / 12</span>
+                    </div>
+                    <div class="barra-progresso-bg">
+                        <div class="barra-progresso-fill" data-width="58.33%" width="58.33%"></div>
+                    </div>
+                </div>
+                                <div class="card status-estavel">
+                    <div class="card-header">
+                        <span class="setor-nome">UTI PEDIÁTRICA</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="porcentagem">50%</span>
+                        <span class="leitos-status">5 / 10</span>
+                    </div>
+                    <div class="barra-progresso-bg">
+                        <div class="barra-progresso-fill" data-width="50%" width="50%"></div>
+                    </div>
+                </div>
+                                <div class="card status-estavel">
+                    <div class="card-header">
+                        <span class="setor-nome">CLÍNICA PEDIÁTRICA</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="porcentagem">48.28%</span>
+                        <span class="leitos-status">14 / 29</span>
+                    </div>
+                    <div class="barra-progresso-bg">
+                        <div class="barra-progresso-fill" data-width="48.28%" width="48.28%"></div>
+                    </div>
+                </div>
+                        </section>
+
+        <section class="coluna-unidade">
+            <div class="header-unidade">
+                <h2 class="titulo-unidade">Unidades de Observação</h2>
+                <div class="valores-indicadores">
+                    <span class="quantidade-pac-leito">32/65</span>
+                    <strong class="unidade-estavel">49.23%</strong>
+                </div>
+            </div>            
+            <div class="grid-indicadores">
+                                <div class="card status-critico">
+                    <div class="card-header">
+                        <span class="setor-nome">PAGO</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="porcentagem">110%</span>
+                        <span class="leitos-status">11 / 10</span>
+                    </div>
+                    <div class="barra-progresso-bg">
+                        <div class="barra-progresso-fill" data-width="110%" width="110%"></div>
+                    </div>
+                </div>
+                                <div class="card status-estavel">
+                    <div class="card-header">
+                        <span class="setor-nome">CPN - CENTRO DE PARTO NORMAL</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="porcentagem">66.67%</span>
+                        <span class="leitos-status">4 / 6</span>
+                    </div>
+                    <div class="barra-progresso-bg">
+                        <div class="barra-progresso-fill" data-width="66.67%" width="66.67%"></div>
+                    </div>
+                </div>
+                                <div class="card status-estavel">
+                    <div class="card-header">
+                        <span class="setor-nome">CENTRO OBSTÉTRICO - SALA DE ADMISSÃO</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="porcentagem">50%</span>
+                        <span class="leitos-status">2 / 4</span>
+                    </div>
+                    <div class="barra-progresso-bg">
+                        <div class="barra-progresso-fill" data-width="50%" width="50%"></div>
+                    </div>
+                </div>
+                                <div class="card status-estavel">
+                    <div class="card-header">
+                        <span class="setor-nome">CGBP - CASA DA GESTANTE BEBÊ E PUÉRPERA</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="porcentagem">45.16%</span>
+                        <span class="leitos-status">14 / 31</span>
+                    </div>
+                    <div class="barra-progresso-bg">
+                        <div class="barra-progresso-fill" data-width="45.16%" width="45.16%"></div>
+                    </div>
+                </div>
+                                <div class="card status-estavel">
+                    <div class="card-header">
+                        <span class="setor-nome">PRONTO ATENDIMENTO PEDIÁTRICO REFERENCIADO</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="porcentagem">14.29%</span>
+                        <span class="leitos-status">1 / 7</span>
+                    </div>
+                    <div class="barra-progresso-bg">
+                        <div class="barra-progresso-fill" data-width="14.29%" width="14.29%"></div>
+                    </div>
+                </div>
+                                <div class="card status-estavel">
+                    <div class="card-header">
+                        <span class="setor-nome">POSTO DE SUPORTE AMBULATORIAL</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="porcentagem">0%</span>
+                        <span class="leitos-status">0 / 7</span>
+                    </div>
+                    <div class="barra-progresso-bg">
+                        <div class="barra-progresso-fill" data-width="0%" width="0%"></div>
+                    </div>
+                </div>
+                        </section>
+
+    </main>
+    <div class="informacoes">
+        <strong>Desenvolvido com 🧠 na USID/SETISD/SUP do HU-UFGD</strong>
+        <small>Atualizado em: 09/11/2026 18:30:00</small>
     </div>
-</footer>
-        <script src="http://10.18.0.82/static/js/jquery.min.js"></script>
-        <script src="http://10.18.0.82/static/js/jquery.simulate.js"></script>
-        <script src="http://10.18.0.82/static/materialize/js/materialize.min.js"></script>
-        <script src="http://10.18.0.82/static/js/jquery.maskedinput.min.js"></script>
-        <script src="http://10.18.0.82/static/js/jsrender.min.js"></script>
-        <script src="/base/assets/js/select2/select2.min.js"></script>
 
-        <script src="/base/assets/js/TabelaAjax.js" type="text/javascript"></script>
-        <script src="/base/assets/js/base.js"></script>
+    <div id="refresh-progress">
+        <div id="refresh-progress-bar"></div>
+    </div>
 
-        <script type="text/javascript">
-            var timeOutBusca = null;
-            var trocarMenus = true;
-            var beforeFetch = false;
-            var beforeResponse = false;
+    <script>
+    (function () {
+        const DURACAO = 60000; // 60 segundos
+        const barra = document.getElementById('refresh-progress-bar');
+        const inicio = performance.now();
 
-            const {fetch: origFetch} = window;
-            
-            window.fetch = async (...args) => {
-                if(beforeFetch){
-                    beforeFetch();
-                }
-                console.log("fetch called with args:", args);
-                const response = await origFetch(...args);
-                
-                /* work with the cloned response in a separate promise
-                    chain -- could use the same chain with `await`. */
-                response
-                    .clone()
-                    .json()
-                    .then(body => console.log("intercepted response:", body))
-                    .catch(err => console.error(err))
-                ;
-                    
-                
-                if(beforeResponse){
-                    beforeResponse(response);
-                }
-                /* the original response can be resolved unmodified: */
-                return response;
-                
-                /* or mock the response: * /
-                return {
-                    ok: true,
-                    status: 200,
-                    json: async () => ({
-                    userId: 1,
-                    id: 1,
-                    title: "Mocked!!",
-                    completed: false
-                    })
-                }; */
-            };
+        function atualizar(agora) {
+            const progresso = Math.min((agora - inicio) / DURACAO, 1);
+            barra.style.width = (progresso * 100) + '%';
 
-            $.ajaxSetup({'global': true});
-            $(document).ready(function () {
-                $("body").on('click', '.bt-excluir', function (e) {
-                    if (!confirm("Deseja realmente excluir esse registro?")) {
-                        e.preventDefault();
-                    }
-                });
+            if (progresso < 1) {
+                requestAnimationFrame(atualizar);
+            }
+        }
 
-                seletor = "a[href='" + document.location.pathname + "']";
-                $(seletor).closest("li").addClass("active"); //closest = sobe na arvore; find = desce na arvore
-                $(seletor).closest(".collapsible-body").css({
-                    "display": "block"
-                });
+        requestAnimationFrame(atualizar);
 
+        document.querySelectorAll('.barra-progresso-fill').forEach(el => {
+            el.style.width = '0';
+
+            requestAnimationFrame(() => {
+                el.style.transition = 'width .8s ease';
+                el.style.width = el.dataset.width;
             });
-        </script>
-         
-    </body>
+        });
+        
+        setTimeout(function () {
+            location.reload();
+        }, DURACAO);
+    })();
+    </script>
+    <script src="http://10.18.0.82/static/js/jquery.min.js"></script>
+
+    </div>
+    
+    <script src="http://10.18.0.82/static/js/jquery.min.js"></script>
+    <script>
+        
+    </script>
+</body>
+
 </html>
