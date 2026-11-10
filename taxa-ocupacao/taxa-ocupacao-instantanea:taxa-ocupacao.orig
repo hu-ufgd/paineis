@@ -457,11 +457,11 @@
                         <span class="setor-nome">CLÍNICA CIRÚRGICA</span>
                     </div>
                     <div class="card-body">
-                        <span class="porcentagem">78.26%</span>
-                        <span class="leitos-status">18 / 23</span>
+                        <span class="porcentagem">73.91%</span>
+                        <span class="leitos-status">17 / 23</span>
                     </div>
                     <div class="barra-progresso-bg">
-                        <div class="barra-progresso-fill" data-width="78.26%" width="78.26%"></div>
+                        <div class="barra-progresso-fill" data-width="73.91%" width="73.91%"></div>
                     </div>
                 </div>
                                 <div class="card status-estavel">
@@ -481,11 +481,11 @@
                         <span class="setor-nome">CLÍNICA PEDIÁTRICA</span>
                     </div>
                     <div class="card-body">
-                        <span class="porcentagem">48.28%</span>
-                        <span class="leitos-status">14 / 29</span>
+                        <span class="porcentagem">51.72%</span>
+                        <span class="leitos-status">15 / 29</span>
                     </div>
                     <div class="barra-progresso-bg">
-                        <div class="barra-progresso-fill" data-width="48.28%" width="48.28%"></div>
+                        <div class="barra-progresso-fill" data-width="51.72%" width="51.72%"></div>
                     </div>
                 </div>
                         </section>
@@ -501,6 +501,18 @@
             <div class="grid-indicadores">
                                 <div class="card status-alerta">
                     <div class="card-header">
+                        <span class="setor-nome">PAGO</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="porcentagem">90%</span>
+                        <span class="leitos-status">9 / 10</span>
+                    </div>
+                    <div class="barra-progresso-bg">
+                        <div class="barra-progresso-fill" data-width="90%" width="90%"></div>
+                    </div>
+                </div>
+                                <div class="card status-alerta">
+                    <div class="card-header">
                         <span class="setor-nome">CPN - CENTRO DE PARTO NORMAL</span>
                     </div>
                     <div class="card-body">
@@ -509,18 +521,6 @@
                     </div>
                     <div class="barra-progresso-bg">
                         <div class="barra-progresso-fill" data-width="83.33%" width="83.33%"></div>
-                    </div>
-                </div>
-                                <div class="card status-estavel">
-                    <div class="card-header">
-                        <span class="setor-nome">PAGO</span>
-                    </div>
-                    <div class="card-body">
-                        <span class="porcentagem">80%</span>
-                        <span class="leitos-status">8 / 10</span>
-                    </div>
-                    <div class="barra-progresso-bg">
-                        <div class="barra-progresso-fill" data-width="80%" width="80%"></div>
                     </div>
                 </div>
                                 <div class="card status-estavel">
@@ -564,11 +564,11 @@
                         <span class="setor-nome">PRONTO ATENDIMENTO PEDIÁTRICO REFERENCIADO</span>
                     </div>
                     <div class="card-body">
-                        <span class="porcentagem">42.86%</span>
-                        <span class="leitos-status">3 / 7</span>
+                        <span class="porcentagem">28.57%</span>
+                        <span class="leitos-status">2 / 7</span>
                     </div>
                     <div class="barra-progresso-bg">
-                        <div class="barra-progresso-fill" data-width="42.86%" width="42.86%"></div>
+                        <div class="barra-progresso-fill" data-width="28.57%" width="28.57%"></div>
                     </div>
                 </div>
                         </section>
@@ -576,7 +576,7 @@
     </main>
     <div class="informacoes">
         <strong>Desenvolvido com 🧠 na USID/SETISD/SUP do HU-UFGD</strong>
-        <small>Atualizado em: 10/11/2026 08:30:00</small>
+        <small>Atualizado em: 10/11/2026 08:45:00</small>
     </div>
 
     <div id="refresh-progress">
