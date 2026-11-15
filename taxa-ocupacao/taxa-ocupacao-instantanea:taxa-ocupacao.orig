@@ -404,18 +404,6 @@
                         <div class="barra-progresso-fill" data-width="100%" width="100%"></div>
                     </div>
                 </div>
-                                <div class="card status-critico">
-                    <div class="card-header">
-                        <span class="setor-nome">UTI ADULTO - B</span>
-                    </div>
-                    <div class="card-body">
-                        <span class="porcentagem">100%</span>
-                        <span class="leitos-status">8 / 8</span>
-                    </div>
-                    <div class="barra-progresso-bg">
-                        <div class="barra-progresso-fill" data-width="100%" width="100%"></div>
-                    </div>
-                </div>
                                 <div class="card status-alerta">
                     <div class="card-header">
                         <span class="setor-nome">UTI NEONATAL</span>
@@ -426,6 +414,18 @@
                     </div>
                     <div class="barra-progresso-bg">
                         <div class="barra-progresso-fill" data-width="90%" width="90%"></div>
+                    </div>
+                </div>
+                                <div class="card status-alerta">
+                    <div class="card-header">
+                        <span class="setor-nome">UTI ADULTO - B</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="porcentagem">87.50%</span>
+                        <span class="leitos-status">7 / 8</span>
+                    </div>
+                    <div class="barra-progresso-bg">
+                        <div class="barra-progresso-fill" data-width="87.50%" width="87.50%"></div>
                     </div>
                 </div>
                                 <div class="card status-estavel">
@@ -481,11 +481,11 @@
                         <span class="setor-nome">CLÍNICA CIRÚRGICA</span>
                     </div>
                     <div class="card-body">
-                        <span class="porcentagem">25%</span>
-                        <span class="leitos-status">6 / 24</span>
+                        <span class="porcentagem">29.17%</span>
+                        <span class="leitos-status">7 / 24</span>
                     </div>
                     <div class="barra-progresso-bg">
-                        <div class="barra-progresso-fill" data-width="25%" width="25%"></div>
+                        <div class="barra-progresso-fill" data-width="29.17%" width="29.17%"></div>
                     </div>
                 </div>
                         </section>
@@ -576,7 +576,7 @@
     </main>
     <div class="informacoes">
         <strong>Desenvolvido com 🧠 na USID/SETISD/SUP do HU-UFGD</strong>
-        <small>Atualizado em: 14/11/2026 22:30:01</small>
+        <small>Atualizado em: 14/11/2026 22:45:00</small>
     </div>
 
     <div id="refresh-progress">
