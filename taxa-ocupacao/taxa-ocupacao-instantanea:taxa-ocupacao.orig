@@ -351,8 +351,8 @@
             <div class="header-unidade">
                 <h2>Unidades de Internação</h2>
                 <div class="valores-indicadores">
-                    <span class="quantidade-pac-leito">162/182</span>
-                    <strong class="unidade-alerta">89.01%</strong>
+                    <span class="quantidade-pac-leito">163/182</span>
+                    <strong class="unidade-alerta">89.56%</strong>
                 </div>
             </div>
             <div class="grid-indicadores">
@@ -430,6 +430,18 @@
                 </div>
                                 <div class="card status-alerta">
                     <div class="card-header">
+                        <span class="setor-nome">CLÍNICA CIRÚRGICA</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="porcentagem">88%</span>
+                        <span class="leitos-status">22 / 25</span>
+                    </div>
+                    <div class="barra-progresso-bg">
+                        <div class="barra-progresso-fill" data-width="88%" width="88%"></div>
+                    </div>
+                </div>
+                                <div class="card status-alerta">
+                    <div class="card-header">
                         <span class="setor-nome">UCI - UNIDADE DE CUIDADOS INTERMEDIÁRIOS NEONATAL</span>
                     </div>
                     <div class="card-body">
@@ -438,18 +450,6 @@
                     </div>
                     <div class="barra-progresso-bg">
                         <div class="barra-progresso-fill" data-width="86.67%" width="86.67%"></div>
-                    </div>
-                </div>
-                                <div class="card status-alerta">
-                    <div class="card-header">
-                        <span class="setor-nome">CLÍNICA CIRÚRGICA</span>
-                    </div>
-                    <div class="card-body">
-                        <span class="porcentagem">84%</span>
-                        <span class="leitos-status">21 / 25</span>
-                    </div>
-                    <div class="barra-progresso-bg">
-                        <div class="barra-progresso-fill" data-width="84%" width="84%"></div>
                     </div>
                 </div>
                                 <div class="card status-alerta">
@@ -576,7 +576,7 @@
     </main>
     <div class="informacoes">
         <strong>Desenvolvido com 🧠 na USID/SETISD/SUP do HU-UFGD</strong>
-        <small>Atualizado em: 17/11/2026 20:00:00</small>
+        <small>Atualizado em: 17/11/2026 20:15:00</small>
     </div>
 
     <div id="refresh-progress">
