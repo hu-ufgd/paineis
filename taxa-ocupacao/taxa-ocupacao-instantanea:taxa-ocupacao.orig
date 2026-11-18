@@ -394,11 +394,11 @@
                 </div>
                                 <div class="card status-critico">
                     <div class="card-header">
-                        <span class="setor-nome">CLÍNICA MÉDICA PSIQUIÁTRICA</span>
+                        <span class="setor-nome">UTI ADULTO - B</span>
                     </div>
                     <div class="card-body">
                         <span class="porcentagem">100%</span>
-                        <span class="leitos-status">9 / 9</span>
+                        <span class="leitos-status">8 / 8</span>
                     </div>
                     <div class="barra-progresso-bg">
                         <div class="barra-progresso-fill" data-width="100%" width="100%"></div>
@@ -406,11 +406,11 @@
                 </div>
                                 <div class="card status-critico">
                     <div class="card-header">
-                        <span class="setor-nome">UTI ADULTO - B</span>
+                        <span class="setor-nome">CLÍNICA MÉDICA PSIQUIÁTRICA</span>
                     </div>
                     <div class="card-body">
                         <span class="porcentagem">100%</span>
-                        <span class="leitos-status">8 / 8</span>
+                        <span class="leitos-status">9 / 9</span>
                     </div>
                     <div class="barra-progresso-bg">
                         <div class="barra-progresso-fill" data-width="100%" width="100%"></div>
@@ -454,11 +454,11 @@
                 </div>
                                 <div class="card status-estavel">
                     <div class="card-header">
-                        <span class="setor-nome">UTI PEDIÁTRICA</span>
+                        <span class="setor-nome">UCI - UNIDADE DE CUIDADOS INTERMEDIÁRIOS NEONATAL</span>
                     </div>
                     <div class="card-body">
                         <span class="porcentagem">80%</span>
-                        <span class="leitos-status">8 / 10</span>
+                        <span class="leitos-status">12 / 15</span>
                     </div>
                     <div class="barra-progresso-bg">
                         <div class="barra-progresso-fill" data-width="80%" width="80%"></div>
@@ -466,11 +466,11 @@
                 </div>
                                 <div class="card status-estavel">
                     <div class="card-header">
-                        <span class="setor-nome">UCI - UNIDADE DE CUIDADOS INTERMEDIÁRIOS NEONATAL</span>
+                        <span class="setor-nome">UTI PEDIÁTRICA</span>
                     </div>
                     <div class="card-body">
                         <span class="porcentagem">80%</span>
-                        <span class="leitos-status">12 / 15</span>
+                        <span class="leitos-status">8 / 10</span>
                     </div>
                     <div class="barra-progresso-bg">
                         <div class="barra-progresso-fill" data-width="80%" width="80%"></div>
@@ -499,40 +499,28 @@
                 </div>
             </div>            
             <div class="grid-indicadores">
-                                <div class="card status-critico">
-                    <div class="card-header">
-                        <span class="setor-nome">POSTO DE SUPORTE AMBULATORIAL</span>
-                    </div>
-                    <div class="card-body">
-                        <span class="porcentagem">100%</span>
-                        <span class="leitos-status">7 / 7</span>
-                    </div>
-                    <div class="barra-progresso-bg">
-                        <div class="barra-progresso-fill" data-width="100%" width="100%"></div>
-                    </div>
-                </div>
-                                <div class="card status-estavel">
+                                <div class="card status-alerta">
                     <div class="card-header">
                         <span class="setor-nome">PAGO</span>
                     </div>
                     <div class="card-body">
-                        <span class="porcentagem">80%</span>
-                        <span class="leitos-status">8 / 10</span>
+                        <span class="porcentagem">90%</span>
+                        <span class="leitos-status">9 / 10</span>
                     </div>
                     <div class="barra-progresso-bg">
-                        <div class="barra-progresso-fill" data-width="80%" width="80%"></div>
+                        <div class="barra-progresso-fill" data-width="90%" width="90%"></div>
                     </div>
                 </div>
-                                <div class="card status-estavel">
+                                <div class="card status-alerta">
                     <div class="card-header">
-                        <span class="setor-nome">CENTRO OBSTÉTRICO - SALA DE ADMISSÃO</span>
+                        <span class="setor-nome">POSTO DE SUPORTE AMBULATORIAL</span>
                     </div>
                     <div class="card-body">
-                        <span class="porcentagem">50%</span>
-                        <span class="leitos-status">2 / 4</span>
+                        <span class="porcentagem">85.71%</span>
+                        <span class="leitos-status">6 / 7</span>
                     </div>
                     <div class="barra-progresso-bg">
-                        <div class="barra-progresso-fill" data-width="50%" width="50%"></div>
+                        <div class="barra-progresso-fill" data-width="85.71%" width="85.71%"></div>
                     </div>
                 </div>
                                 <div class="card status-estavel">
@@ -542,6 +530,18 @@
                     <div class="card-body">
                         <span class="porcentagem">50%</span>
                         <span class="leitos-status">3 / 6</span>
+                    </div>
+                    <div class="barra-progresso-bg">
+                        <div class="barra-progresso-fill" data-width="50%" width="50%"></div>
+                    </div>
+                </div>
+                                <div class="card status-estavel">
+                    <div class="card-header">
+                        <span class="setor-nome">CENTRO OBSTÉTRICO - SALA DE ADMISSÃO</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="porcentagem">50%</span>
+                        <span class="leitos-status">2 / 4</span>
                     </div>
                     <div class="barra-progresso-bg">
                         <div class="barra-progresso-fill" data-width="50%" width="50%"></div>
@@ -576,7 +576,7 @@
     </main>
     <div class="informacoes">
         <strong>Desenvolvido com 🧠 na USID/SETISD/SUP do HU-UFGD</strong>
-        <small>Atualizado em: 18/11/2026 09:15:00</small>
+        <small>Atualizado em: 18/11/2026 09:30:00</small>
     </div>
 
     <div id="refresh-progress">
