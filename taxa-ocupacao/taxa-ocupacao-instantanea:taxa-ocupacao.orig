@@ -361,11 +361,11 @@
                         <span class="setor-nome">CLÍNICA OBSTÉTRICA</span>
                     </div>
                     <div class="card-body">
-                        <span class="porcentagem">150%</span>
-                        <span class="leitos-status">18 / 12</span>
+                        <span class="porcentagem">141.67%</span>
+                        <span class="leitos-status">17 / 12</span>
                     </div>
                     <div class="barra-progresso-bg">
-                        <div class="barra-progresso-fill" data-width="150%" width="150%"></div>
+                        <div class="barra-progresso-fill" data-width="141.67%" width="141.67%"></div>
                     </div>
                 </div>
                                 <div class="card status-critico">
@@ -421,11 +421,11 @@
                         <span class="setor-nome">AC - ALOJAMENTO CONJUNTO</span>
                     </div>
                     <div class="card-body">
-                        <span class="porcentagem">91.67%</span>
-                        <span class="leitos-status">22 / 24</span>
+                        <span class="porcentagem">95.83%</span>
+                        <span class="leitos-status">23 / 24</span>
                     </div>
                     <div class="barra-progresso-bg">
-                        <div class="barra-progresso-fill" data-width="91.67%" width="91.67%"></div>
+                        <div class="barra-progresso-fill" data-width="95.83%" width="95.83%"></div>
                     </div>
                 </div>
                                 <div class="card status-alerta">
@@ -576,7 +576,7 @@
     </main>
     <div class="informacoes">
         <strong>Desenvolvido com 🧠 na USID/SETISD/SUP do HU-UFGD</strong>
-        <small>Atualizado em: 26/11/2026 22:45:00</small>
+        <small>Atualizado em: 26/11/2026 23:00:01</small>
     </div>
 
     <div id="refresh-progress">
